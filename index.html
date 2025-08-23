@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nik Mohd Shafik Izwan - Technology Leader & AI Innovator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #3949ab;
+            --accent-color: #ff6b35;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --bg-light: #f8f9ff;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+            --shadow: 0 20px 40px rgba(26, 35, 126, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="80" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/><circle cx="900" cy="800" r="90" fill="url(%23a)"/></svg>');
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateX(0) rotate(0deg); }
+            100% { transform: translateX(-100px) rotate(360deg); }
+        }
+
+        .hero-content {
+            text-align: center;
+            color: var(--white);
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: slideUp 1s ease 0.5s forwards;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: slideUp 1s ease 0.7s forwards;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: slideUp 1s ease 0.9s forwards;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            opacity: 0;
+            animation: slideUp 1s ease 1.1s forwards;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            opacity: 0;
+            animation: slideUp 1s ease 1.3s forwards;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--bg-light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .profile-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient);
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: var(--gradient);
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--white);
+        }
+
+        .profile-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .profile-info p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .highlight {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(26, 35, 126, 0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .highlight h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Companies Section */
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .company-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .company-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient);
+        }
+
+        .company-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .company-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .company-info h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+
+        .company-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .company-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .detail-item i {
+            color: var(--accent-color);
+            width: 16px;
+        }
+
+        /* Products Section */
+        .products {
+            background: var(--bg-light);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(26, 35, 126, 0.15);
+        }
+
+        .product-header {
+            padding: 2rem 2rem 1rem;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            position: relative;
+        }
+
+        .product-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: var(--white);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .product-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-category {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .product-body {
+            padding: 1rem 2rem 2rem;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .product-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .product-features li::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: var(--bg-light);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Experience Section */
+        .experience {
+            background: var(--bg-light);
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 3rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            margin: 0 2rem;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: calc(50% + 2rem);
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: calc(50% + 2rem);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            top: 2rem;
+            width: 20px;
+            height: 20px;
+            background: var(--gradient);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border: 4px solid var(--white);
+            z-index: 2;
+        }
+
+        .timeline-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-company {
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-description {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .contact-info-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-section p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-detail i {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .companies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 2rem;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin: 0 0 0 4rem;
+            }
+
+            .timeline-marker {
+                left: 2rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .company-details {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animation on Scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--bg-light);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Nik Shafik</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#companies">Companies</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Nik Mohd Shafik Izwan</h1>
+            <p class="hero-subtitle">CEO & Founder | Technology Leader | AI Innovator</p>
+            <p class="hero-description">
+                Transforming industries through AI-driven solutions and IoT innovation. 
+                Building the future with 13+ years of technology expertise.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">13+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Companies Founded</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">AI/IoT Products</span>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-user"></i> Learn More
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <p class="section-subtitle fade-in">Technology visionary with a passion for innovation</p>
+            
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-photo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Nik Mohd Shafik Izwan</h3>
+                            <p>Founder & CEO</p>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Seri Kembangan, Selangor</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>017-4511455</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>nikshafik186@gmail.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-birthday-cake"></i>
+                                    <span>38 Years Old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h3>Technology Leader & AI Innovator</h3>
+                    <p>
+                        With over 13 years of experience in system development, ERP implementation, and emerging technologies, 
+                        I specialize in creating AI-driven solutions that transform traditional industries. As the founder of 
+                        two technology companies, I've dedicated my career to building innovative products that solve real-world problems.
+                    </p>
+                    <p>
+                        My expertise spans full-stack development, IoT systems, artificial intelligence, and enterprise solutions. 
+                        I've successfully led teams in developing cutting-edge products for agriculture, security, and disaster management sectors.
+                    </p>
+
+                    <div class="highlights">
+                        <div class="highlight">
+                            <h4><i class="fas fa-trophy"></i> Leadership</h4>
+                            <p>Founded and leading two successful tech companies with innovative AI and IoT solutions</p>
+                        </div>
+                        <div class="highlight">
+                            <h4><i class="fas fa-code"></i> Technical Expertise</h4>
+                            <p>Full-stack developer proficient in C#, .NET, Python, IoT, and modern web technologies</p>
+                        </div>
+                        <div class="highlight">
+                            <h4><i class="fas fa-lightbulb"></i> Innovation</h4>
+                            <p>Creator of multiple AI-powered products serving agriculture, security, and enterprise sectors</p>
+                        </div>
+                        <div class="highlight">
+                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                            <p>Diploma in IT Programming from Polytechnic Seberang Perai with strong technical foundation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="companies" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">My Companies</h2>
+            <p class="section-subtitle fade-in">Leading innovation through strategic technology ventures</p>
+            
+            <div class="companies-grid fade-in">
+                <div class="company-card">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>Nasa Def Sdn Bhd</h3>
+                            <p>AI-First Enterprise Solutions Provider</p>
+                        </div>
+                    </div>
+                    
+                    <div class="company-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Founded: October 2023</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-id-card"></i>
+                            <span>SSM: 202401043707</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kota Bharu, Kelantan</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-globe"></i>
+                            <span>nasadef.com.my</span>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        Leading provider of AI-driven enterprise solutions and IoT security systems. 
+                        Specializing in AISA platform, Farm Guard, WildSec, and FloodSense technologies 
+                        serving agriculture, hospitality, and manufacturing sectors across Southeast Asia.
+                    </p>
+                    
+                    <div class="company-highlights">
+                        <span class="skill-tag">AI Solutions</span>
+                        <span class="skill-tag">IoT Security</span>
+                        <span class="skill-tag">Enterprise Platform</span>
+                        <span class="skill-tag">B2B SaaS</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>Izwan Systec Enterprise</h3>
+                            <p>R&D and Technology Innovation Hub</p>
+                        </div>
+                    </div>
+                    
+                    <div class="company-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Founded: March 2021</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-id-card"></i>
+                            <span>SSM: 202103055724</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kota Bharu & Selangor</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-link"></i>
+                            <span>Sister Company</span>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        Advanced R&D center driving continuous innovation for the Nasa Def ecosystem. 
+                        Focused on cutting-edge AI research, prototype development, and next-generation 
+                        technology solutions that shape the future of smart automation.
+                    </p>
+                    
+                    <div class="company-highlights">
+                        <span class="skill-tag">R&D Center</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">AI Research</span>
+                        <span class="skill-tag">Innovation Hub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Products</h2>
+            <p class="section-subtitle fade-in">Revolutionary AI and IoT solutions transforming industries</p>
+            
+            <div class="products-grid fade-in">
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="product-title">AISA</h3>
+                        <p class="product-category">AI-driven Business Solutions</p>
+                    </div>
+                    <div class="product-body">
+                        <p>Intelligent platform for business process automation with advanced customer engagement capabilities.</p>
+                        <ul class="product-features">
+                            <li>Business Process Automation</li>
+                            <li>Customer Engagement Management</li>
+                            <li>Predictive Analytics</li>
+                            <li>Multi-language Support</li>
+                            <li>Sentiment Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3 class="product-title">Farm Sense</h3>
+                        <p class="product-category">IoT Agriculture Security</p>
+                    </div>
+                    <div class="product-body">
+                        <p>Smart intrusion detection system designed specifically for agricultural environments.</p>
+                        <ul class="product-features">
+                            <li>Motion & Vibration Detection</li>
+                            <li>Real-time Farm Monitoring</li>
+                            <li>Early Warning Alerts</li>
+                            <li>IoT Sensor Integration</li>
+                            <li>Wildlife Intrusion Detection</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="product-title">Farm Guard</h3>
+                        <p class="product-category">Automated Farm Security</p>
+                    </div>
+                    <div class="product-body">
+                        <p>Comprehensive security platform with automated deterrent systems for farm protection.</p>
+                        <ul class="product-features">
+                            <li>Automated Security Response</li>
+                            <li>Wildlife Deterrent Systems</li>
+                            <li>Smart Perimeter Control</li>
+                            <li>Siren & Light Activation</li>
+                            <li>Remote Monitoring Dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="product-title">WildSec</h3>
+                        <p class="product-category">AI-Ready Wildlife Monitoring</p>
+                    </div>
+                    <div class="product-body">
+                        <p>Solar-powered surveillance system with AI capabilities for wildlife and security monitoring.</p>
+                        <ul class="product-features">
+                            <li>Solar-Powered Operation</li>
+                            <li>AI-Ready Technology</li>
+                            <li>4G Connectivity</li>
+                            <li>Selective Media Upload</li>
+                            <li>Advanced Perimeter Security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3 class="product-title">FloodSense</h3>
+                        <p class="product-category">Smart Flood Monitoring</p>
+                    </div>
+                    <div class="product-body">
+                        <p>Government-grade flood monitoring and early warning system with predictive analytics.</p>
+                        <ul class="product-features">
+                            <li>Solar CCTV Integration</li>
+                            <li>NB-IoT Water Level Sensors</li>
+                            <li>AI-Powered Predictions</li>
+                            <li>Real-time Alerts</li>
+                            <li>Disaster Management Tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Technical Expertise</h2>
+            <p class="section-subtitle fade-in">Full-stack capabilities across modern technology stacks</p>
+            
+            <div class="skills-container fade-in">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">Rust</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Frameworks & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">.NET 6+</span>
+                        <span class="skill-tag">ASP.NET Core</span>
+                        <span class="skill-tag">Blazor</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>IoT & Hardware</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">MQTT</span>
+                        <span class="skill-tag">LoRaWAN</span>
+                        <span class="skill-tag">NB-IoT</span>
+                        <span class="skill-tag">4G/LTE</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Professional Journey</h2>
+            <p class="section-subtitle fade-in">13+ years of technology leadership and innovation</p>
+            
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2025 - Present</div>
+                        <h3 class="timeline-title">Back-End Developer</h3>
+                        <div class="timeline-company">HPCS Sdn Bhd</div>
+                        <p class="timeline-description">
+                            Building scalable billing system components using .NET Core 6 and REST APIs. 
+                            Delivering reliable backend solutions under pressure with minimal supervision while 
+                            maintaining high coding standards and user requirement alignment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2024 - Present</div>
+                        <h3 class="timeline-title">Chief Inventor & Founder</h3>
+                        <div class="timeline-company">Nasa Def Sdn Bhd</div>
+                        <p class="timeline-description">
+                            Leading IoT development for agriculture with smart vibration sensors and warning systems. 
+                            Spearheading field testing, system integration, and government pitching to agencies like MTDC, 
+                            Cradle, and MySTI, aligning innovative projects with national technology initiatives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2019 - May 2025</div>
+                        <h3 class="timeline-title">Technology Product Manager</h3>
+                        <div class="timeline-company">Cara Technologies Sdn Bhd</div>
+                        <p class="timeline-description">
+                            Led full-stack development of internal systems using .NET (C#) and SQL Server. 
+                            Engineered scalable enterprise solutions, provided technical leadership, and developed 
+                            FinTech product marketing strategies that secured key client partnerships.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2014 - July 2018</div>
+                        <h3 class="timeline-title">IT Executive</h3>
+                        <div class="timeline-company">SB Tape International Sdn Bhd</div>
+                        <p class="timeline-description">
+                            Managed daily IT operations including system maintenance, .NET development, and technical support 
+                            for enterprise systems like Barcode, Weblink, AX, and SAPS. Led team coordination using SB Tape 
+                            for improved workflow efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2013 - June 2014</div>
+                        <h3 class="timeline-title">IT Marketing & Support</h3>
+                        <div class="timeline-company">Vida Beauty Enterprise</div>
+                        <p class="timeline-description">
+                            Deployed MLM website infrastructure, designed creative marketing campaigns, and conducted 
+                            online marketing training. Managed profit analysis and provided comprehensive IT support 
+                            including payroll system management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">March 2012 - June 2013</div>
+                        <h3 class="timeline-title">Admin Assistant & IT Support</h3>
+                        <div class="timeline-company">De Pauh Garden Restaurant</div>
+                        <p class="timeline-description">
+                            Configured and maintained POS systems, managed HR records and statistical reporting, 
+                            and coordinated employment activities including compensation management and employee 
+                            engagement initiatives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        Ready to discuss your next AI or IoT project? Whether you're looking for innovative 
+                        technology solutions, strategic partnerships, or expert consultation, I'm here to help 
+                        transform your vision into reality.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                nikshafik186@gmail.com<br>
+                                nikshafik@nasadef.com.my
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong><br>
+                                +60 17-451 1455
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong><br>
+                                Seri Kembangan, Selangor<br>
+                                Malaysia
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <strong>Website</strong><br>
+                                www.nasadef.com.my
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nikshafik" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/nikshafik" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.nasadef.com.my" class="social-link" target="_blank">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="mailto:nikshafik186@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <p>&copy; 2025 Nik Mohd Shafik Izwan. All rights reserved.</p>
+            <p>Founder & CEO of Nasa Def Sdn Bhd | Technology Leader | AI Innovator</p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('hide');
+            }, 1000);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 5px 30px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Contact form handling
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create mailto link
+            const mailtoLink = `mailto:nikshafik186@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your message! Your email client should open now.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('.product-card, .company-card, .skill-category').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Typing effect for hero title (enhanced)
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            element.style.opacity = '1';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect after page load
+        setTimeout(() => {
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                typeWriter(heroTitle, 'Nik Mohd Shafik Izwan', 150);
+            }
+        }, 1500);
+
+        // Add dynamic stats counter animation
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start) + '+';
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target + '+';
+                }
+            }
+            updateCounter();
+        }
+
+        // Animate stats when they come into view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach((stat, index) => {
+                        const targets = [13, 2, 5];
+                        setTimeout(() => {
+                            animateCounter(stat, targets[index]);
+                        }, index * 200);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            statsObserver.observe(heroStats);
+        }
+    </script>
+</body>
+</html>
