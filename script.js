@@ -49,10 +49,10 @@ function initThemeToggle() {
         updateThemeIcon(newTheme);
         
         // Add smooth transition
-        document.body.style.transition = 'all 0.3s ease';
+        document.body.style.transition = 'all 0.2s ease';
         setTimeout(() => {
             document.body.style.transition = '';
-        }, 300);
+        }, 200);
     });
     
     function updateThemeIcon(theme) {
@@ -111,9 +111,9 @@ function animateCounter(element, isStat = false) {
     else if (target === 3 || target === 2) suffix = '';
     
     let current = 0;
-    const increment = target / 50; // 50 steps
-    const duration = 500; // 5 seconds
-    const stepTime = duration / 50;
+    const increment = target / 30; // 30 steps
+    const duration = 800; // 0.8 seconds
+    const stepTime = duration / 30;
     
     const timer = setInterval(() => {
         current += increment;
@@ -139,8 +139,8 @@ function initTypingEffect() {
     
     if (heroTitle) {
         setTimeout(() => {
-            typeWriter(heroTitle, text, 100);
-        }, 800);
+            typeWriter(heroTitle, text, 50);
+        }, 400);
     }
 }
 
@@ -314,8 +314,8 @@ function initIntersectionObserver() {
     animatedElements.forEach((element, index) => {
         // Set initial state
         element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        element.style.transition = `all 0.6s ease ${index * 0.1}s`;
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = `all 0.4s ease ${index * 0.05}s`;
         
         observer.observe(element);
     });
