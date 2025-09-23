@@ -1,138 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nik Mohd Shafik Izwan - Technology Leader & AI Innovator</title>
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading" id="loading">
-        <div class="spinner"></div>
-    </div>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Nik Shafik</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#companies">Companies</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#clients">Clients</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-95 fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-gradient fs-4" href="#home">Nik Shafik</a>
+            
+            <div class="d-flex align-items-center gap-2">
+                <!-- Theme Toggle -->
+                <button id="themeToggle" class="btn btn-outline-primary btn-sm rounded-circle p-2" title="Toggle Dark Mode">
+                    <i id="themeIcon" class="bi bi-moon"></i>
+                </button>
+                
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#companies">Companies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Nik Mohd Shafik Izwan</h1>
-            <p class="hero-subtitle">CEO & Founder | Technology Leader | AI Innovator</p>
-            <p class="hero-description">
-                Transforming industries through AI-driven solutions and IoT innovation. 
-                Building the future with 13+ years of technology expertise.
-            </p>
-            
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">13+</span>
-                    <span class="stat-label">Years Experience</span>
+    <section id="home" class="hero-bg d-flex align-items-center">
+        <div class="container text-center text-white position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 id="heroTitle" class="display-3 fw-bold mb-4 typing-animation">Nik Mohd Shafik Izwan</h1>
+                    <p class="fs-4 mb-3">CEO & Founder | Technology Leader | AI Innovator</p>
+                    <p class="fs-5 mb-5 opacity-90">
+                        Transforming industries through AI-driven solutions and IoT innovation. 
+                        Building the future with 13+ years of technology expertise.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="display-4 fw-bold" data-counter="13">0+</div>
+                                <div class="fs-6 opacity-90">Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="display-4 fw-bold" data-counter="2">0</div>
+                                <div class="fs-6 opacity-90">Companies Founded</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="display-4 fw-bold" data-counter="5">0+</div>
+                                <div class="fs-6 opacity-90">AI/IoT Products</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                        <a href="#about" class="btn btn-light btn-lg px-4 py-3">
+                            <i class="bi bi-person me-2"></i>Learn More
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3">
+                            <i class="bi bi-envelope me-2"></i>Get In Touch
+                        </a>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">Companies Founded</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">AI/IoT Products</span>
-                </div>
-            </div>
-
-            <div class="cta-buttons">
-                <a href="#about" class="btn btn-primary">
-                    <i class="fas fa-user"></i> Learn More
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i> Get In Touch
-                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="py-5 bg-body-secondary">
         <div class="container">
-            <h2 class="section-title fade-in">About Me</h2>
-            <p class="section-subtitle fade-in">Technology visionary with a passion for innovation</p>
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-gradient mb-3">About Me</h2>
+                <p class="fs-5 text-muted">Technology visionary with a passion for innovation</p>
+            </div>
             
-            <div class="about-content fade-in">
-                <div class="about-image">
-                    <div class="profile-card">
-                        <div class="profile-photo">
-                           
-								<img src="Shafik-Passport.png" alt="Nik Mohd Shafik Izwan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-							
-                        </div>
-                        <div class="profile-info">
-                            <h3>Nik Mohd Shafik Izwan</h3>
-                            <p>Founder & CEO</p>
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Seri Kembangan, Selangor</span>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4">
+                    <!-- Profile Card -->
+                    <div class="card border-0 shadow-lg text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="position-relative mb-3">
+                                <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                                     style="width: 150px; height: 150px;">
+                                    <img src="Shafik-Passport.png" alt="Nik Mohd Shafik Izwan" 
+                                         class="rounded-circle w-100 h-100 object-fit-cover">
                                 </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-phone"></i>
-                                    <span>017-4511455</span>
+                            </div>
+                            <h4 class="fw-bold text-primary mb-2">Nik Mohd Shafik Izwan</h4>
+                            <p class="text-muted mb-3">Founder & CEO</p>
+                            
+                            <div class="text-start">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt text-danger me-2"></i>
+                                    <small>Seri Kembangan, Selangor</small>
                                 </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>nikshafik186@gmail.com</span>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-telephone text-success me-2"></i>
+                                    <small>017-4511455</small>
                                 </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-birthday-cake"></i>
-                                    <span>38 Years Old</span>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-envelope text-primary me-2"></i>
+                                    <small>nikshafik186@gmail.com</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-cake text-warning me-2"></i>
+                                    <small>38 Years Old</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="about-text">
-                    <h3>Technology Leader & AI Innovator</h3>
-                    <p>
+                
+                <div class="col-lg-8">
+                    <h3 class="fw-bold text-primary mb-4">Technology Leader & AI Innovator</h3>
+                    <p class="fs-6 mb-4">
                         With over 13 years of experience in system development, ERP implementation, and emerging technologies, 
                         I specialize in creating AI-driven solutions that transform traditional industries. As the founder of 
                         two technology companies, I've dedicated my career to building innovative products that solve real-world problems.
                     </p>
-                    <p>
+                    <p class="fs-6 mb-4">
                         My expertise spans full-stack development, IoT systems, artificial intelligence, and enterprise solutions. 
                         I've successfully led teams in developing cutting-edge products for agriculture, security, and disaster management sectors.
                     </p>
-
-                    <div class="highlights">
-                        <div class="highlight">
-                            <h4><i class="fas fa-trophy"></i> Leadership</h4>
-                            <p>Founded and leading two successful tech companies with innovative AI and IoT solutions</p>
+                    
+                    <!-- Highlights -->
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-primary bg-opacity-10 h-100">
+                                <div class="card-body p-3">
+                                    <h6 class="fw-bold text-primary mb-2">
+                                        <i class="bi bi-trophy me-2"></i>Leadership
+                                    </h6>
+                                    <small>Founded and leading two successful tech companies with innovative AI and IoT solutions</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="highlight">
-                            <h4><i class="fas fa-code"></i> Technical Expertise</h4>
-                            <p>Full-stack developer proficient in C#, .NET, Python, IoT, and modern web technologies</p>
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-success bg-opacity-10 h-100">
+                                <div class="card-body p-3">
+                                    <h6 class="fw-bold text-success mb-2">
+                                        <i class="bi bi-code-slash me-2"></i>Technical Expertise
+                                    </h6>
+                                    <small>Full-stack developer proficient in C#, .NET, Python, IoT, and modern web technologies</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="highlight">
-                            <h4><i class="fas fa-lightbulb"></i> Innovation</h4>
-                            <p>Creator of multiple AI-powered products serving agriculture, security, and enterprise sectors</p>
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-warning bg-opacity-10 h-100">
+                                <div class="card-body p-3">
+                                    <h6 class="fw-bold text-warning mb-2">
+                                        <i class="bi bi-lightbulb me-2"></i>Innovation
+                                    </h6>
+                                    <small>Creator of multiple AI-powered products serving agriculture, security, and enterprise sectors</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="highlight">
-                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
-                            <p>Diploma in IT Programming from Polytechnic Seberang Perai with strong technical foundation</p>
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-info bg-opacity-10 h-100">
+                                <div class="card-body p-3">
+                                    <h6 class="fw-bold text-info mb-2">
+                                        <i class="bi bi-mortarboard me-2"></i>Education
+                                    </h6>
+                                    <small>Diploma in IT Programming from Polytechnic Seberang Perai with strong technical foundation</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,97 +202,97 @@
     </section>
 
     <!-- Companies Section -->
-    <section id="companies" class="section">
+    <section id="companies" class="py-5">
         <div class="container">
-            <h2 class="section-title fade-in">My Companies</h2>
-            <p class="section-subtitle fade-in">Leading innovation through strategic technology ventures</p>
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-gradient mb-3">My Companies</h2>
+                <p class="fs-5 text-muted">Leading innovation through strategic technology ventures</p>
+            </div>
             
-            <div class="companies-grid fade-in">
-                <div class="company-card">
-                    <div class="company-header">
-                        <div class="company-logo">
-                            <i class="fas fa-rocket"></i>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-gradient-primary rounded-3 p-3 me-3">
+                                    <i class="bi bi-rocket text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold text-primary mb-1">Nasa Def Sdn Bhd</h4>
+                                    <p class="text-muted mb-0">AI-First Enterprise Solutions Provider</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-2 mb-3 small text-muted">
+                                <div class="col-6">
+                                    <i class="bi bi-calendar me-1"></i>Founded: October 2023
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-card-text me-1"></i>SSM: 202401043707
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-geo-alt me-1"></i>Kota Bharu, Kelantan
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-globe me-1"></i>nasadef.com.my
+                                </div>
+                            </div>
+                            
+                            <p class="mb-3">
+                                Leading provider of AI-driven enterprise solutions and IoT security systems. 
+                                Specializing in AISA platform, Farm Guard, WildSec, and FloodSense technologies.
+                            </p>
+                            
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">AI Solutions</span>
+                                <span class="badge bg-secondary">IoT Security</span>
+                                <span class="badge bg-success">Enterprise Platform</span>
+                                <span class="badge bg-info">B2B SaaS</span>
+                            </div>
                         </div>
-                        <div class="company-info">
-                            <h3>Nasa Def Sdn Bhd</h3>
-                            <p>AI-First Enterprise Solutions Provider</p>
-                        </div>
-                    </div>
-                    
-                    <div class="company-details">
-                        <div class="detail-item">
-                            <i class="fas fa-calendar"></i>
-                            <span>Founded: October 2023</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-id-card"></i>
-                            <span>SSM: 202401043707</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kota Bharu, Kelantan</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-globe"></i>
-                            <span>nasadef.com.my</span>
-                        </div>
-                    </div>
-                    
-                    <p>
-                        Leading provider of AI-driven enterprise solutions and IoT security systems. 
-                        Specializing in AISA platform, Farm Guard, WildSec, and FloodSense technologies 
-                        serving agriculture, hospitality, and manufacturing sectors across Southeast Asia.
-                    </p>
-                    
-                    <div class="company-highlights">
-                        <span class="skill-tag">AI Solutions</span>
-                        <span class="skill-tag">IoT Security</span>
-                        <span class="skill-tag">Enterprise Platform</span>
-                        <span class="skill-tag">B2B SaaS</span>
                     </div>
                 </div>
-
-                <div class="company-card">
-                    <div class="company-header">
-                        <div class="company-logo">
-                            <i class="fas fa-cogs"></i>
+                
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-gradient-primary rounded-3 p-3 me-3">
+                                    <i class="bi bi-gear text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold text-primary mb-1">Izwan Systec Enterprise</h4>
+                                    <p class="text-muted mb-0">R&D and Technology Innovation Hub</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-2 mb-3 small text-muted">
+                                <div class="col-6">
+                                    <i class="bi bi-calendar me-1"></i>Founded: March 2021
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-card-text me-1"></i>SSM: 202103055724
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-geo-alt me-1"></i>Kota Bharu & Selangor
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-link me-1"></i>Sister Company
+                                </div>
+                            </div>
+                            
+                            <p class="mb-3">
+                                Advanced R&D center driving continuous innovation for the Nasa Def ecosystem. 
+                                Focused on cutting-edge AI research and next-generation technology solutions.
+                            </p>
+                            
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">R&D Center</span>
+                                <span class="badge bg-secondary">Prototyping</span>
+                                <span class="badge bg-success">AI Research</span>
+                                <span class="badge bg-info">Innovation Hub</span>
+                            </div>
                         </div>
-                        <div class="company-info">
-                            <h3>Izwan Systec Enterprise</h3>
-                            <p>R&D and Technology Innovation Hub</p>
-                        </div>
-                    </div>
-                    
-                    <div class="company-details">
-                        <div class="detail-item">
-                            <i class="fas fa-calendar"></i>
-                            <span>Founded: March 2021</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-id-card"></i>
-                            <span>SSM: 202103055724</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kota Bharu & Selangor</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-link"></i>
-                            <span>Sister Company</span>
-                        </div>
-                    </div>
-                    
-                    <p>
-                        Advanced R&D center driving continuous innovation for the Nasa Def ecosystem. 
-                        Focused on cutting-edge AI research, prototype development, and next-generation 
-                        technology solutions that shape the future of smart automation.
-                    </p>
-                    
-                    <div class="company-highlights">
-                        <span class="skill-tag">R&D Center</span>
-                        <span class="skill-tag">Prototyping</span>
-                        <span class="skill-tag">AI Research</span>
-                        <span class="skill-tag">Innovation Hub</span>
                     </div>
                 </div>
             </div>
@@ -239,109 +300,111 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="section products">
+    <section id="products" class="py-5 bg-body-secondary">
         <div class="container">
-            <h2 class="section-title fade-in">Our Products</h2>
-            <p class="section-subtitle fade-in">Revolutionary AI and IoT solutions transforming industries</p>
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-gradient mb-3">Our Products</h2>
+                <p class="fs-5 text-muted">Revolutionary AI and IoT solutions transforming industries</p>
+            </div>
             
-            <div class="products-grid fade-in">
-                <div class="product-card">
-                    <div class="product-header">
-                        <div class="product-icon">
-                            <i class="fas fa-brain"></i>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-header bg-gradient-primary text-white text-center py-4">
+                            <i class="bi bi-brain fs-1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-1">AISA</h4>
+                            <p class="mb-0 opacity-75">AI-driven Business Solutions</p>
                         </div>
-                        <h3 class="product-title">AISA</h3>
-                        <p class="product-category">AI-driven Business Solutions</p>
-                    </div>
-                    <div class="product-body">
-                        <p>Intelligent platform for business process automation with advanced customer engagement capabilities.</p>
-                        <ul class="product-features">
-                            <li>Business Process Automation</li>
-                            <li>Customer Engagement Management</li>
-                            <li>Predictive Analytics</li>
-                            <li>Multi-language Support</li>
-                            <li>Sentiment Analysis</li>
-                        </ul>
+                        <div class="card-body p-4">
+                            <p class="mb-3">Intelligent platform for business process automation with advanced customer engagement capabilities.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Business Process Automation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Customer Engagement Management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Predictive Analytics</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Multi-language Support</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Sentiment Analysis</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-header">
-                        <div class="product-icon">
-                            <i class="fas fa-seedling"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-header bg-gradient-primary text-white text-center py-4">
+                            <i class="bi bi-flower2 fs-1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-1">Farm Sense</h4>
+                            <p class="mb-0 opacity-75">IoT Agriculture Security</p>
                         </div>
-                        <h3 class="product-title">Farm Sense</h3>
-                        <p class="product-category">IoT Agriculture Security</p>
-                    </div>
-                    <div class="product-body">
-                        <p>Smart intrusion detection system designed specifically for agricultural environments.</p>
-                        <ul class="product-features">
-                            <li>Motion & Vibration Detection</li>
-                            <li>Real-time Farm Monitoring</li>
-                            <li>Early Warning Alerts</li>
-                            <li>IoT Sensor Integration</li>
-                            <li>Wildlife Intrusion Detection</li>
-                        </ul>
+                        <div class="card-body p-4">
+                            <p class="mb-3">Smart intrusion detection system designed specifically for agricultural environments.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Motion & Vibration Detection</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Real-time Farm Monitoring</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Early Warning Alerts</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>IoT Sensor Integration</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Wildlife Intrusion Detection</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-header">
-                        <div class="product-icon">
-                            <i class="fas fa-shield-alt"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-header bg-gradient-primary text-white text-center py-4">
+                            <i class="bi bi-shield-check fs-1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-1">Farm Guard</h4>
+                            <p class="mb-0 opacity-75">Automated Farm Security</p>
                         </div>
-                        <h3 class="product-title">Farm Guard</h3>
-                        <p class="product-category">Automated Farm Security</p>
-                    </div>
-                    <div class="product-body">
-                        <p>Comprehensive security platform with automated deterrent systems for farm protection.</p>
-                        <ul class="product-features">
-                            <li>Automated Security Response</li>
-                            <li>Wildlife Deterrent Systems</li>
-                            <li>Smart Perimeter Control</li>
-                            <li>Siren & Light Activation</li>
-                            <li>Remote Monitoring Dashboard</li>
-                        </ul>
+                        <div class="card-body p-4">
+                            <p class="mb-3">Comprehensive security platform with automated deterrent systems for farm protection.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Automated Security Response</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Wildlife Deterrent Systems</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Smart Perimeter Control</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Siren & Light Activation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Remote Monitoring Dashboard</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-header">
-                        <div class="product-icon">
-                            <i class="fas fa-camera"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-header bg-gradient-primary text-white text-center py-4">
+                            <i class="bi bi-camera fs-1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-1">WildSec</h4>
+                            <p class="mb-0 opacity-75">AI-Ready Wildlife Monitoring</p>
                         </div>
-                        <h3 class="product-title">WildSec</h3>
-                        <p class="product-category">AI-Ready Wildlife Monitoring</p>
-                    </div>
-                    <div class="product-body">
-                        <p>Solar-powered surveillance system with AI capabilities for wildlife and security monitoring.</p>
-                        <ul class="product-features">
-                            <li>Solar-Powered Operation</li>
-                            <li>AI-Ready Technology</li>
-                            <li>4G Connectivity</li>
-                            <li>Selective Media Upload</li>
-                            <li>Advanced Perimeter Security</li>
-                        </ul>
+                        <div class="card-body p-4">
+                            <p class="mb-3">Solar-powered surveillance system with AI capabilities for wildlife and security monitoring.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Solar-Powered Operation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>AI-Ready Technology</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>4G Connectivity</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Selective Media Upload</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Advanced Perimeter Security</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-header">
-                        <div class="product-icon">
-                            <i class="fas fa-water"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-header bg-gradient-primary text-white text-center py-4">
+                            <i class="bi bi-droplet fs-1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-1">FloodSense</h4>
+                            <p class="mb-0 opacity-75">Smart Flood Monitoring</p>
                         </div>
-                        <h3 class="product-title">FloodSense</h3>
-                        <p class="product-category">Smart Flood Monitoring</p>
-                    </div>
-                    <div class="product-body">
-                        <p>Government-grade flood monitoring and early warning system with predictive analytics.</p>
-                        <ul class="product-features">
-                            <li>Solar CCTV Integration</li>
-                            <li>NB-IoT Water Level Sensors</li>
-                            <li>AI-Powered Predictions</li>
-                            <li>Real-time Alerts</li>
-                            <li>Disaster Management Tools</li>
-                        </ul>
+                        <div class="card-body p-4">
+                            <p class="mb-3">Government-grade flood monitoring and early warning system with predictive analytics.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Solar CCTV Integration</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>NB-IoT Water Level Sensors</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>AI-Powered Predictions</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Real-time Alerts</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Disaster Management Tools</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -349,173 +412,169 @@
     </section>
 
     <!-- Clients Section -->
-    <section id="clients" class="section">
+    <section id="clients" class="py-5">
         <div class="container">
-            <h2 class="section-title fade-in">Key Clients & Projects</h2>
-            <p class="section-subtitle fade-in">Trusted by leading organizations across Malaysia</p>
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-gradient mb-3">Key Clients & Projects</h2>
+                <p class="fs-5 text-muted">Trusted by leading organizations across Malaysia</p>
+            </div>
             
-            <div class="clients-grid fade-in">
-                <div class="client-card" data-project="sbtape">
-                    <div class="client-logo">
-                        <i class="fas fa-industry"></i>
-                        <span class="client-code">SB</span>
-                    </div>
-                    <div class="client-info">
-                        <h3>SBTAPE Sdn Bhd</h3>
-                        <p class="client-type">Manufacturing</p>
-                        <h4>Coating Production System</h4>
-                        <p class="project-desc">Maintain and add new features to comply user need</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">.NET</span>
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">SQL Server</span>
-                        </div>
-                    </div>
-                    <div class="client-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project Details</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="client-card" data-project="jpnin">
-                    <div class="client-logo">
-                        <i class="fas fa-flag"></i>
-                        <span class="client-code">JP</span>
-                    </div>
-                    <div class="client-info">
-                        <h3>JPNIN</h3>
-                        <p class="client-type">Government Agency</p>
-                        <h4>E-Fokus Mapping</h4>
-                        <p class="project-desc">Mapping and matching with analisis issue perpaduan</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">MAPS</span>
-                            <span class="tech-tag">Analytics</span>
-                            <span class="tech-tag">Web Platform</span>
-                        </div>
-                        <div class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>efokus.jpnin.gov.my</span>
-                        </div>
-                    </div>
-                    <div class="client-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project Details</p>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 rounded-3 p-3 me-3">
+                                    <i class="bi bi-factory text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-primary mb-1">SBTAPE Sdn Bhd</h5>
+                                    <small class="text-muted">Manufacturing</small>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">Coating Production System</h6>
+                            <p class="text-muted small mb-3">Maintain and add new features to comply user need</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-secondary">.NET</span>
+                                <span class="badge bg-secondary">C#</span>
+                                <span class="badge bg-secondary">SQL Server</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="client-card" data-project="iwk">
-                    <div class="client-logo">
-                        <i class="fas fa-tint"></i>
-                        <span class="client-code">IW</span>
-                    </div>
-                    <div class="client-info">
-                        <h3>IWK</h3>
-                        <p class="client-type">Indah Water Konsortium</p>
-                        <h4>New Billing System</h4>
-                        <p class="project-desc">ALL in One Internal system likely ERP system for operational</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">ERP</span>
-                            <span class="tech-tag">.NET Core</span>
-                            <span class="tech-tag">Enterprise</span>
-                        </div>
-                    </div>
-                    <div class="client-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project Details</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="client-card" data-project="rela">
-                    <div class="client-logo">
-                        <i class="fas fa-users"></i>
-                        <span class="client-code">RL</span>
-                    </div>
-                    <div class="client-info">
-                        <h3>RELA</h3>
-                        <p class="client-type">Jabatan Sukarelawan Malaysia</p>
-                        <h4>Mapping and Predict</h4>
-                        <p class="project-desc">Mapping all cases related with anggota to count anggota working and check nearest location</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Record Mapping</span>
-                            <span class="tech-tag">Analytics</span>
-                            <span class="tech-tag">Location AI</span>
-                        </div>
-                    </div>
-                    <div class="client-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project Details</p>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success bg-opacity-10 rounded-3 p-3 me-3">
+                                    <i class="bi bi-flag text-success fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-primary mb-1">JPNIN</h5>
+                                    <small class="text-muted">Government Agency</small>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">E-Fokus Mapping</h6>
+                            <p class="text-muted small mb-3">Mapping and matching with analisis issue perpaduan</p>
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="badge bg-secondary">MAPS</span>
+                                <span class="badge bg-secondary">Analytics</span>
+                                <span class="badge bg-secondary">Web Platform</span>
+                            </div>
+                            <small class="text-primary">
+                                <i class="bi bi-link-45deg me-1"></i>efokus.jpnin.gov.my
+                            </small>
                         </div>
                     </div>
                 </div>
-
-                <div class="client-card" data-project="felcra">
-                    <div class="client-logo">
-                        <i class="fas fa-leaf"></i>
-                        <span class="client-code">FC</span>
-                    </div>
-                    <div class="client-info">
-                        <h3>Felcra Berhad</h3>
-                        <p class="client-type">Agriculture Development</p>
-                        <h4>Device Farmsense</h4>
-                        <p class="project-desc">To detect and warn to farmer on wild animals like elephant tresspass palm oil plant</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">IoT Sensors</span>
-                            <span class="tech-tag">AI Detection</span>
-                            <span class="tech-tag">Farm Security</span>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-info bg-opacity-10 rounded-3 p-3 me-3">
+                                    <i class="bi bi-droplet text-info fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-primary mb-1">IWK</h5>
+                                    <small class="text-muted">Indah Water Konsortium</small>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">New Billing System</h6>
+                            <p class="text-muted small mb-3">ALL in One Internal system likely ERP system for operational</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-secondary">ERP</span>
+                                <span class="badge bg-secondary">.NET Core</span>
+                                <span class="badge bg-secondary">Enterprise</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="client-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project Details</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning bg-opacity-10 rounded-3 p-3 me-3">
+                                    <i class="bi bi-people text-warning fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-primary mb-1">RELA</h5>
+                                    <small class="text-muted">Jabatan Sukarelawan Malaysia</small>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">Mapping and Predict</h6>
+                            <p class="text-muted small mb-3">Mapping all cases related with anggota to count anggota working and check nearest location</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-secondary">Record Mapping</span>
+                                <span class="badge bg-secondary">Analytics</span>
+                                <span class="badge bg-secondary">Location AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow hover-lift h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success bg-opacity-10 rounded-3 p-3 me-3">
+                                    <i class="bi bi-tree text-success fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-primary mb-1">Felcra Berhad</h5>
+                                    <small class="text-muted">Agriculture Development</small>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">Device Farmsense</h6>
+                            <p class="text-muted small mb-3">To detect and warn to farmer on wild animals like elephant tresspass palm oil plant</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-secondary">IoT Sensors</span>
+                                <span class="badge bg-secondary">AI Detection</span>
+                                <span class="badge bg-secondary">Farm Security</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Client Stats -->
-            <div class="client-stats fade-in">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div class="stat-content">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Enterprise Clients</span>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <div class="stat-content">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Projects Delivered</span>
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 bg-primary bg-opacity-10 h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-building text-primary fs-2 mb-3"></i>
+                            <h4 class="fw-bold text-primary mb-1" data-counter-stat="5">0+</h4>
+                            <p class="text-muted mb-0">Enterprise Clients</p>
+                        </div>
                     </div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="stat-content">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Client Satisfaction</span>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 bg-success bg-opacity-10 h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-diagram-3 text-success fs-2 mb-3"></i>
+                            <h4 class="fw-bold text-success mb-1" data-counter-stat="10">0+</h4>
+                            <p class="text-muted mb-0">Projects Delivered</p>
+                        </div>
                     </div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-handshake"></i>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 bg-warning bg-opacity-10 h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-graph-up text-warning fs-2 mb-3"></i>
+                            <h4 class="fw-bold text-warning mb-1" data-counter-stat="100">0%</h4>
+                            <p class="text-muted mb-0">Client Satisfaction</p>
+                        </div>
                     </div>
-                    <div class="stat-content">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Government Agencies</span>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 bg-info bg-opacity-10 h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-handshake text-info fs-2 mb-3"></i>
+                            <h4 class="fw-bold text-info mb-1" data-counter-stat="3">0</h4>
+                            <p class="text-muted mb-0">Government Agencies</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -523,97 +582,129 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills">
+    <section id="skills" class="py-5 bg-body-secondary">
         <div class="container">
-            <h2 class="section-title fade-in">Technical Expertise</h2>
-            <p class="section-subtitle fade-in">Full-stack capabilities across modern technology stacks</p>
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-gradient mb-3">Technical Expertise</h2>
+                <p class="fs-5 text-muted">Full-stack capabilities across modern technology stacks</p>
+            </div>
             
-            <div class="skills-container fade-in">
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Go</span>
-                        <span class="skill-tag">Rust</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h3>Frameworks & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">.NET 6+</span>
-                        <span class="skill-tag">ASP.NET Core</span>
-                        <span class="skill-tag">Blazor</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">FastAPI</span>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                                 style="width: 80px; height: 80px;">
+                                <i class="bi bi-code-slash text-white fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary mb-3">Programming Languages</h5>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-primary">C#</span>
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                                <span class="badge bg-primary">C++</span>
+                                <span class="badge bg-primary">Go</span>
+                                <span class="badge bg-primary">Rust</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database Systems</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Oracle</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Redis</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <h3>IoT & Hardware</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ESP32</span>
-                        <span class="skill-tag">Raspberry Pi</span>
-                        <span class="skill-tag">MQTT</span>
-                        <span class="skill-tag">LoRaWAN</span>
-                        <span class="skill-tag">NB-IoT</span>
-                        <span class="skill-tag">4G/LTE</span>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                                 style="width: 80px; height: 80px;">
+                                <i class="bi bi-layers text-white fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary mb-3">Frameworks & Platforms</h5>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-secondary">.NET 6+</span>
+                                <span class="badge bg-secondary">ASP.NET Core</span>
+                                <span class="badge bg-secondary">Blazor</span>
+                                <span class="badge bg-secondary">Express.js</span>
+                                <span class="badge bg-secondary">Flask</span>
+                                <span class="badge bg-secondary">FastAPI</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">CI/CD</span>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                                 style="width: 80px; height: 80px;">
+                                <i class="bi bi-server text-white fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary mb-3">Database Systems</h5>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-success">Oracle</span>
+                                <span class="badge bg-success">PostgreSQL</span>
+                                <span class="badge bg-success">MySQL</span>
+                                <span class="badge bg-success">MongoDB</span>
+                                <span class="badge bg-success">Redis</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-robot"></i>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                                 style="width: 80px; height: 80px;">
+                                <i class="bi bi-cpu text-white fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary mb-3">IoT & Hardware</h5>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-warning">ESP32</span>
+                                <span class="badge bg-warning">Raspberry Pi</span>
+                                <span class="badge bg-warning">MQTT</span>
+                                <span class="badge bg-warning">LoRaWAN</span>
+                                <span class="badge bg-warning">NB-IoT</span>
+                                <span class="badge bg-warning">4G/LTE</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3>AI & Machine Learning</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">NLP</span>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                                 style="width: 80px; height: 80px;">
+                                <i class="bi bi-cloud text-white fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary mb-3">Cloud & DevOps</h5>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-info">Azure</span>
+                                <span class="badge bg-info">AWS</span>
+                                <span class="badge bg-info">Docker</span>
+                                <span class="badge bg-info">Kubernetes</span>
+                                <span class="badge bg-info">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                                 style="width: 80px; height: 80px;">
+                                <i class="bi bi-robot text-white fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold text-primary mb-3">AI & Machine Learning</h5>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-danger">TensorFlow</span>
+                                <span class="badge bg-danger">PyTorch</span>
+                                <span class="badge bg-danger">OpenCV</span>
+                                <span class="badge bg-danger">LangChain</span>
+                                <span class="badge bg-danger">Computer Vision</span>
+                                <span class="badge bg-danger">NLP</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -621,147 +712,156 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section experience">
+    <section id="experience" class="py-5">
         <div class="container">
-            <h2 class="section-title fade-in">Professional Journey</h2>
-            <p class="section-subtitle fade-in">13+ years of technology leadership and innovation</p>
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-gradient mb-3">Professional Journey</h2>
+                <p class="fs-5 text-muted">13+ years of technology leadership and innovation</p>
+            </div>
             
-            <div class="timeline fade-in">
-                <div class="timeline-item">
-                    <div class="timeline-marker current"></div>
-                    <div class="timeline-content current">
-                        <div class="timeline-date">September 2025 - Present</div>
-                        <h3 class="timeline-title">Software Engineer</h3>
-                        <div class="timeline-company">Asolute Sdn Bhd</div>
-                        <p class="timeline-description">
-                            Developing comprehensive logistics and ERP systems using full-stack technologies. 
-                            Building scalable web-based and mobile applications to streamline business operations, 
-                            inventory management, and supply chain processes for enhanced operational efficiency.
-                        </p>
-                        <div class="timeline-tech-stack">
-                            <span class="tech-tag">Full-Stack Development</span>
-                            <span class="tech-tag">ERP Systems</span>
-                            <span class="tech-tag">Logistics Management</span>
-                            <span class="tech-tag">Mobile Apps</span>
+            <div class="position-relative">
+                <div class="timeline">
+                    <!-- Current Position -->
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-0 shadow-lg border-success border-3">
+                                <div class="card-header bg-success text-white">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="fw-bold">September 2025 - Present</small>
+                                        <span class="badge bg-light text-success">CURRENT</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold text-success mb-2">Software Engineer</h5>
+                                    <h6 class="text-muted mb-3">Asolute Sdn Bhd</h6>
+                                    <p class="mb-3">Developing comprehensive logistics and ERP systems using full-stack technologies. Building scalable applications for enhanced operational efficiency.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary">Full-Stack Development</span>
+                                        <span class="badge bg-secondary">ERP Systems</span>
+                                        <span class="badge bg-success">Logistics Management</span>
+                                        <span class="badge bg-info">Mobile Apps</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <small class="fw-bold">June 2025 - August 2025</small>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold text-primary mb-2">Back-End Developer</h5>
+                                    <h6 class="text-muted mb-3">HPCS Sdn Bhd</h6>
+                                    <p class="mb-3">Built scalable billing system components using .NET Core 6 and REST APIs with minimal supervision.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary">.NET Core 6</span>
+                                        <span class="badge bg-secondary">REST APIs</span>
+                                        <span class="badge bg-success">Billing Systems</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">June 2025 - August 2025</div>
-                        <h3 class="timeline-title">Back-End Developer</h3>
-                        <div class="timeline-company">HPCS Sdn Bhd</div>
-                        <p class="timeline-description">
-                            Built scalable billing system components using .NET Core 6 and REST APIs. 
-                            Delivered reliable backend solutions under pressure with minimal supervision while 
-                            maintaining high coding standards and user requirement alignment.
-                        </p>
-                        <div class="timeline-tech-stack">
-                            <span class="tech-tag">.NET Core 6</span>
-                            <span class="tech-tag">REST APIs</span>
-                            <span class="tech-tag">Billing Systems</span>
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <small class="fw-bold">July 2024 - Present</small>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold text-primary mb-2">Chief Inventor & Founder</h5>
+                                    <h6 class="text-muted mb-3">Nasa Def Sdn Bhd</h6>
+                                    <p class="mb-3">Leading IoT development for agriculture with smart vibration sensors and government relations.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-warning">IoT Development</span>
+                                        <span class="badge bg-info">Smart Sensors</span>
+                                        <span class="badge bg-danger">AI/ML</span>
+                                        <span class="badge bg-success">Government Relations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <small class="fw-bold">Dec 2019 - May 2025</small>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold text-primary mb-2">Technology Product Manager</h5>
+                                    <h6 class="text-muted mb-3">Cara Technologies Sdn Bhd</h6>
+                                    <p class="mb-3">Led full-stack development and engineered scalable enterprise solutions for FinTech products.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary">.NET Framework</span>
+                                        <span class="badge bg-secondary">SQL Server</span>
+                                        <span class="badge bg-warning">FinTech Solutions</span>
+                                        <span class="badge bg-success">Team Leadership</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">July 2024 - Present</div>
-                        <h3 class="timeline-title">Chief Inventor & Founder</h3>
-                        <div class="timeline-company">Nasa Def Sdn Bhd</div>
-                        <p class="timeline-description">
-                            Leading IoT development for agriculture with smart vibration sensors and warning systems. 
-                            Spearheading field testing, system integration, and government pitching to agencies like MTDC, 
-                            Cradle, and MySTI, aligning innovative projects with national technology initiatives.
-                        </p>
-                        <div class="timeline-tech-stack">
-                            <span class="tech-tag">IoT Development</span>
-                            <span class="tech-tag">Smart Sensors</span>
-                            <span class="tech-tag">AI/ML</span>
-                            <span class="tech-tag">Government Relations</span>
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-secondary text-white">
+                                    <small class="fw-bold">July 2014 - July 2018</small>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold text-secondary mb-2">IT Executive</h5>
+                                    <h6 class="text-muted mb-3">SB Tape International Sdn Bhd</h6>
+                                    <p class="mb-3">Managed daily IT operations and .NET development for enterprise systems.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-info">System Maintenance</span>
+                                        <span class="badge bg-primary">.NET Development</span>
+                                        <span class="badge bg-secondary">Enterprise Systems</span>
+                                        <span class="badge bg-warning">IT Operations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-secondary text-white">
+                                    <small class="fw-bold">July 2013 - June 2014</small>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold text-secondary mb-2">IT Marketing & Support</h5>
+                                    <h6 class="text-muted mb-3">Vida Beauty Enterprise</h6>
+                                    <p class="mb-3">Deployed MLM website infrastructure and managed digital marketing campaigns.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-success">Web Development</span>
+                                        <span class="badge bg-info">MLM Systems</span>
+                                        <span class="badge bg-warning">Digital Marketing</span>
+                                        <span class="badge bg-primary">Payroll Systems</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Dec 2019 - May 2025</div>
-                        <h3 class="timeline-title">Technology Product Manager</h3>
-                        <div class="timeline-company">Cara Technologies Sdn Bhd</div>
-                        <p class="timeline-description">
-                            Led full-stack development of internal systems using .NET (C#) and SQL Server. 
-                            Engineered scalable enterprise solutions, provided technical leadership, and developed 
-                            FinTech product marketing strategies that secured key client partnerships.
-                        </p>
-                        <div class="timeline-tech-stack">
-                            <span class="tech-tag">.NET Framework</span>
-                            <span class="tech-tag">SQL Server</span>
-                            <span class="tech-tag">FinTech Solutions</span>
-                            <span class="tech-tag">Team Leadership</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">July 2014 - July 2018</div>
-                        <h3 class="timeline-title">IT Executive</h3>
-                        <div class="timeline-company">SB Tape International Sdn Bhd</div>
-                        <p class="timeline-description">
-                            Managed daily IT operations including system maintenance, .NET development, and technical support 
-                            for enterprise systems like Barcode, Weblink, AX, and SAPS. Led team coordination using SB Tape 
-                            for improved workflow efficiency.
-                        </p>
-                        <div class="timeline-tech-stack">
-                            <span class="tech-tag">System Maintenance</span>
-                            <span class="tech-tag">.NET Development</span>
-                            <span class="tech-tag">Enterprise Systems</span>
-                            <span class="tech-tag">IT Operations</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">July 2013 - June 2014</div>
-                        <h3 class="timeline-title">IT Marketing & Support</h3>
-                        <div class="timeline-company">Vida Beauty Enterprise</div>
-                        <p class="timeline-description">
-                            Deployed MLM website infrastructure, designed creative marketing campaigns, and conducted 
-                            online marketing training. Managed profit analysis and provided comprehensive IT support 
-                            including payroll system management.
-                        </p>
-                        <div class="timeline-tech-stack">
-                            <span class="tech-tag">Web Development</span>
-                            <span class="tech-tag">MLM Systems</span>
-                            <span class="tech-tag">Digital Marketing</span>
-                            <span class="tech-tag">Payroll Systems</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">March 2012 - June 2013</div>
-                        <h3 class="timeline-title">Admin Assistant & IT Support</h3>
-                        <div class="timeline-company">De Pauh Garden Restaurant</div>
-                        <p class="timeline-description">
-                            Configured and maintained POS systems, managed HR records and statistical reporting, 
-                            and coordinated employment activities including compensation management and employee 
-                            engagement initiatives.
-                        </p>
-                        <div class="timeline-tech-stack">
-                            <span class="tech-tag">POS Systems</span>
-                            <span class="tech-tag">HR Management</span>
-                            <span class="tech-tag">Data Analysis</span>
-                            <span class="tech-tag">IT Support</span>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-secondary text-white">
+                                    <small class="fw-bold">March 2012 - June 2013</small>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold text-secondary mb-2">Admin Assistant & IT Support</h5>
+                                    <h6 class="text-muted mb-3">De Pauh Garden Restaurant</h6>
+                                    <p class="mb-3">Configured POS systems and managed HR records with statistical reporting.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-warning">POS Systems</span>
+                                        <span class="badge bg-info">HR Management</span>
+                                        <span class="badge bg-success">Data Analysis</span>
+                                        <span class="badge bg-primary">IT Support</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -770,109 +870,140 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="py-5 bg-gradient-primary text-white">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info-section">
-                    <h3>Let's Connect</h3>
-                    <p>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">Let's Connect</h2>
+                    <p class="fs-5 mb-4 opacity-90">
                         Ready to discuss your next AI or IoT project? Whether you're looking for innovative 
-                        technology solutions, strategic partnerships, or expert consultation, I'm here to help 
-                        transform your vision into reality.
+                        technology solutions, strategic partnerships, or expert consultation, I'm here to help.
                     </p>
                     
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email</strong><br>
-                                nikshafik186@gmail.com<br>
-                                nikshafik@nasadef.com.my
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-white bg-opacity-20 rounded-3 p-3 me-3">
+                                    <i class="bi bi-envelope fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Email</h6>
+                                    <small>nikshafik186@gmail.com</small><br>
+                                    <small>nikshafik@nasadef.com.my</small>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="contact-detail">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <strong>Phone</strong><br>
-                                +60 17-451 1455
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-white bg-opacity-20 rounded-3 p-3 me-3">
+                                    <i class="bi bi-telephone fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Phone</h6>
+                                    <small>+60 17-451 1455</small>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Location</strong><br>
-                                Seri Kembangan, Selangor<br>
-                                Malaysia
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-white bg-opacity-20 rounded-3 p-3 me-3">
+                                    <i class="bi bi-geo-alt fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Location</h6>
+                                    <small>Seri Kembangan, Selangor</small><br>
+                                    <small>Malaysia</small>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="contact-detail">
-                            <i class="fas fa-globe"></i>
-                            <div>
-                                <strong>Website</strong><br>
-                                www.nasadef.com.my
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-white bg-opacity-20 rounded-3 p-3 me-3">
+                                    <i class="bi bi-globe fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Website</h6>
+                                    <small>www.nasadef.com.my</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                
+                <div class="col-lg-6">
+                    <div class="card border-0 bg-white bg-opacity-10 backdrop-blur">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">Send a Message</h4>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control bg-white bg-opacity-20 border-0 text-white" 
+                                           id="name" name="name" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control bg-white bg-opacity-20 border-0 text-white" 
+                                           id="email" name="email" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control bg-white bg-opacity-20 border-0 text-white" 
+                                           id="subject" name="subject" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control bg-white bg-opacity-20 border-0 text-white" 
+                                              id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-light btn-lg w-100">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </form>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="bg-dark text-white py-4">
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/nikshafik" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/nikshafik" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.nasadef.com.my" class="social-link" target="_blank">
-                    <i class="fas fa-globe"></i>
-                </a>
-                <a href="mailto:nikshafik186@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex gap-3 mb-3 mb-md-0">
+                        <a href="https://www.linkedin.com/in/nikshafik" class="btn btn-outline-light btn-sm rounded-circle" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/nikshafik" class="btn btn-outline-light btn-sm rounded-circle" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.nasadef.com.my" class="btn btn-outline-light btn-sm rounded-circle" target="_blank">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                        <a href="mailto:nikshafik186@gmail.com" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-1">&copy; 2025 Nik Mohd Shafik Izwan. All rights reserved.</p>
+                    <small class="text-muted">Founder & CEO of Nasa Def Sdn Bhd | Technology Leader | AI Innovator</small>
+                </div>
             </div>
-            
-            <p>&copy; 2025 Nik Mohd Shafik Izwan. All rights reserved.</p>
-            <p>Founder & CEO of Nasa Def Sdn Bhd | Technology Leader | AI Innovator</p>
         </div>
     </footer>
 
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
