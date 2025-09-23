@@ -112,7 +112,7 @@ function animateCounter(element, isStat = false) {
     
     let current = 0;
     const increment = target / 50; // 50 steps
-    const duration = 1500; // 1.5 seconds
+    const duration = 500; // 5 seconds
     const stepTime = duration / 50;
     
     const timer = setInterval(() => {
