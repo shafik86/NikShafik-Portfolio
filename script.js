@@ -260,12 +260,12 @@ function showProjectModal(projectId) {
             title: 'JPNIN - E-Fokus Mapping Platform',
             description: 'Advanced mapping and analysis platform for national unity issues.',
             details: [
-                'Developed GIS-based mapping solution',
+                'Developed Maps-based mapping solution',
                 'Implemented data analytics for unity issues',
                 'Created interactive dashboards',
                 'Integrated with government databases'
             ],
-            technologies: ['GIS Technology', 'Web Mapping', 'Analytics Engine', 'Government APIs'],
+            technologies: ['Maps Technology', 'Web Mapping', 'Analytics Engine', 'Government APIs'],
             duration: 'Government Project',
             role: 'Lead Developer',
             link: 'efokus.jpnin.gov.my'
