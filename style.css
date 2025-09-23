@@ -1,16 +1,16 @@
 /* Bootstrap Portfolio Custom CSS */
 
 :root {
-    --bs-primary-rgb: 26, 35, 126;
-    --bs-secondary-rgb: 57, 73, 171;
-    --custom-gradient: linear-gradient(135deg, rgb(26, 35, 126) 0%, rgb(57, 73, 171) 100%);
+    --bs-primary-rgb: 32, 52, 81;
+    --bs-secondary-rgb: 86, 103, 127;
+    --custom-gradient: linear-gradient(135deg, rgb(32, 52, 81) 0%, rgb(86, 103, 127) 100%);
     --animation-duration: 0.3s;
 }
 
 [data-bs-theme="dark"] {
-    --bs-primary-rgb: 63, 81, 181;
-    --bs-secondary-rgb: 92, 107, 192;
-    --custom-gradient: linear-gradient(135deg, rgb(63, 81, 181) 0%, rgb(92, 107, 192) 100%);
+    --bs-primary-rgb: 44, 62, 80;
+    --bs-secondary-rgb: 93, 109, 126;
+    --custom-gradient: linear-gradient(135deg, rgb(44, 62, 80) 0%, rgb(93, 109, 126) 100%);
 }
 
 /* Custom Utility Classes */
