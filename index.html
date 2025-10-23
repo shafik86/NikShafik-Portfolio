@@ -9,25 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+<body>
 
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-95 fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-95 fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold text-gradient fs-4" href="#home">Nik Shafik</a>
             
             <div class="d-flex align-items-center gap-2">
-                <!-- Theme Toggle -->
-                <button id="themeToggle" class="btn btn-outline-primary btn-sm rounded-circle p-2" title="Toggle Dark Mode">
+                <button id="themeToggle" class="btn btn-outline-primary btn-sm rounded-circle p-2">
                     <i id="themeIcon" class="bi bi-moon"></i>
                 </button>
                 
-                <!-- Mobile Toggle -->
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -50,10 +46,10 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-bg d-flex align-items-center">
-        <div class="container text-center text-white position-relative">
+        <div class="container text-center text-white">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h1 id="heroTitle" class="display-3 fw-bold mb-4 typing-animation">Nik Mohd Shafik Izwan</h1>
+                    <h1 class="display-3 fw-bold mb-4">Nik Mohd Shafik Izwan</h1>
                     <p class="fs-4 mb-3">CEO & Founder | Technology Leader | AI Innovator</p>
                     <p class="fs-5 mb-5 opacity-90">
                         Transforming industries through AI-driven solutions and IoT innovation. 
@@ -64,19 +60,19 @@
                     <div class="row g-4 mb-5">
                         <div class="col-md-4">
                             <div class="text-center">
-                                <div class="display-4 fw-bold" data-counter="13">0+</div>
+                                <div class="display-4 fw-bold" data-counter="13">13+</div>
                                 <div class="fs-6 opacity-90">Years Experience</div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center">
-                                <div class="display-4 fw-bold" data-counter="2">0</div>
+                                <div class="display-4 fw-bold" data-counter="2">2</div>
                                 <div class="fs-6 opacity-90">Companies Founded</div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center">
-                                <div class="display-4 fw-bold" data-counter="5">0+</div>
+                                <div class="display-4 fw-bold" data-counter="5">5+</div>
                                 <div class="fs-6 opacity-90">AI/IoT Products</div>
                             </div>
                         </div>
@@ -106,17 +102,15 @@
             
             <div class="row g-5 align-items-center">
                 <div class="col-lg-4">
-                    <!-- Profile Card -->
                     <div class="card border-0 shadow-lg text-center h-100">
                         <div class="card-body p-4">
-                            <div class="position-relative mb-3">
-                                <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
-                                     style="width: 150px; height: 150px;">
-                                    <img src="Shafik-Passport.png" alt="Nik Mohd Shafik Izwan" 
-                                         class="rounded-circle w-100 h-100 object-fit-cover">
-                                </div>
+                            <!-- Profile Image -->
+                            <div class="mx-auto mb-3" style="width: 150px; height: 150px;">
+                                <img src="images/Shafik-Passport.png" alt="Nik Mohd Shafik Izwan" 
+                                     class="rounded-circle w-100 h-100 object-fit-cover shadow">
                             </div>
-                            <h4 class="fw-bold text-primary mb-2">Nik Mohd Shafik Izwan</h4>
+                            
+                            <h4 class="fw-bold text-tech-blue mb-2">Nik Mohd Shafik Izwan</h4>
                             <p class="text-muted mb-3">Founder & CEO</p>
                             
                             <div class="text-start">
@@ -142,7 +136,7 @@
                 </div>
                 
                 <div class="col-lg-8">
-                    <h3 class="fw-bold text-primary mb-4">Technology Leader & AI Innovator</h3>
+                    <h3 class="fw-bold text-tech-blue mb-4">Technology Leader & AI Innovator</h3>
                     <p class="fs-6 mb-4">
                         With over 13 years of experience in system development, ERP implementation, and emerging technologies, 
                         I specialize in creating AI-driven solutions that transform traditional industries. As the founder of 
@@ -158,7 +152,7 @@
                         <div class="col-md-6">
                             <div class="card border-0 bg-primary bg-opacity-10 h-100">
                                 <div class="card-body p-3">
-                                    <h6 class="fw-bold text-primary mb-2">
+                                    <h6 class="fw-bold text-tech-blue mb-2">
                                         <i class="bi bi-trophy me-2"></i>Leadership
                                     </h6>
                                     <small>Founded and leading two successful tech companies with innovative AI and IoT solutions</small>
@@ -168,7 +162,7 @@
                         <div class="col-md-6">
                             <div class="card border-0 bg-success bg-opacity-10 h-100">
                                 <div class="card-body p-3">
-                                    <h6 class="fw-bold text-success mb-2">
+                                    <h6 class="fw-bold text-tech-green mb-2">
                                         <i class="bi bi-code-slash me-2"></i>Technical Expertise
                                     </h6>
                                     <small>Full-stack developer proficient in C#, .NET, Python, IoT, and modern web technologies</small>
@@ -209,19 +203,17 @@
                 <p class="fs-5 text-muted">Leading innovation through strategic technology ventures</p>
             </div>
             
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow hover-lift h-100">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <!-- Company Logo -->
+                        <div class="bg-light d-flex align-items-center justify-content-center p-4" style="height: 180px;">
+                            <img src="images/nasadef_logo.png" alt="Nasa Def Sdn Bhd" class="img-fluid" style="max-height: 150px; max-width: 100%; object-fit: contain;">
+                        </div>
+                        
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-gradient-primary rounded-3 p-3 me-3">
-                                    <i class="bi bi-rocket text-white fs-4"></i>
-                                </div>
-                                <div>
-                                    <h4 class="fw-bold text-primary mb-1">Nasa Def Sdn Bhd</h4>
-                                    <p class="text-muted mb-0">AI-First Enterprise Solutions Provider</p>
-                                </div>
-                            </div>
+                            <h4 class="fw-bold text-tech-blue mb-2">Nasa Def Sdn Bhd</h4>
+                            <p class="text-muted mb-3">AI-First Enterprise Solutions Provider</p>
                             
                             <div class="row g-2 mb-3 small text-muted">
                                 <div class="col-6">
@@ -244,8 +236,8 @@
                             </p>
                             
                             <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary">AI Solutions</span>
-                                <span class="badge bg-secondary">IoT Security</span>
+                                <span class="badge bg-tech-blue">AI Solutions</span>
+                                <span class="badge bg-tech-green">IoT Security</span>
                                 <span class="badge bg-success">Enterprise Platform</span>
                                 <span class="badge bg-info">B2B SaaS</span>
                             </div>
@@ -253,18 +245,16 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow hover-lift h-100">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <!-- Company Logo -->
+                        <div class="bg-light d-flex align-items-center justify-content-center p-4" style="height: 180px;">
+                            <img src="images/isystec_logo.png" alt="Izwan Systec Enterprise" class="img-fluid" style="max-height: 150px; max-width: 100%; object-fit: contain;">
+                        </div>
+                        
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-gradient-primary rounded-3 p-3 me-3">
-                                    <i class="bi bi-gear text-white fs-4"></i>
-                                </div>
-                                <div>
-                                    <h4 class="fw-bold text-primary mb-1">Izwan Systec Enterprise</h4>
-                                    <p class="text-muted mb-0">R&D and Technology Innovation Hub</p>
-                                </div>
-                            </div>
+                            <h4 class="fw-bold text-tech-blue mb-2">Izwan Systec Enterprise</h4>
+                            <p class="text-muted mb-3">R&D and Technology Innovation Hub</p>
                             
                             <div class="row g-2 mb-3 small text-muted">
                                 <div class="col-6">
@@ -287,8 +277,8 @@
                             </p>
                             
                             <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary">R&D Center</span>
-                                <span class="badge bg-secondary">Prototyping</span>
+                                <span class="badge bg-tech-blue">R&D Center</span>
+                                <span class="badge bg-tech-green">Prototyping</span>
                                 <span class="badge bg-success">AI Research</span>
                                 <span class="badge bg-info">Innovation Hub</span>
                             </div>
@@ -307,102 +297,107 @@
                 <p class="fs-5 text-muted">Revolutionary AI and IoT solutions transforming industries</p>
             </div>
             
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
-                        <div class="card-header bg-gradient-primary text-white text-center py-4">
-                            <i class="bi bi-brain fs-1 mb-3 d-block"></i>
-                            <h4 class="fw-bold mb-1">AISA</h4>
-                            <p class="mb-0 opacity-75">AI-driven Business Solutions</p>
+            <div class="row g-4 justify-content-center">
+                <!-- AISA -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <!-- Product Image -->
+                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 200px;">
+                            <img src="images/aisa_product.png" alt="AISA Product" class="img-fluid" style="max-height: 180px; max-width: 100%; object-fit: contain;">
                         </div>
                         <div class="card-body p-4">
+                            <h4 class="fw-bold text-tech-blue mb-2">AISA</h4>
+                            <p class="text-muted mb-3">AI-driven Business Solutions</p>
                             <p class="mb-3">Intelligent platform for business process automation with advanced customer engagement capabilities.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Business Process Automation</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Customer Engagement Management</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Predictive Analytics</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Multi-language Support</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Sentiment Analysis</li>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Business Process Automation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Customer Engagement Management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Predictive Analytics</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Multi-language Support</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
-                        <div class="card-header bg-gradient-primary text-white text-center py-4">
-                            <i class="bi bi-flower2 fs-1 mb-3 d-block"></i>
-                            <h4 class="fw-bold mb-1">Farm Sense</h4>
-                            <p class="mb-0 opacity-75">IoT Agriculture Security</p>
+                <!-- Farm Sense -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <!-- Product Image -->
+                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 200px;">
+                            <img src="images/farmsense_product.png" alt="Farm Sense Product" class="img-fluid" style="max-height: 180px; max-width: 100%; object-fit: contain;">
                         </div>
                         <div class="card-body p-4">
+                            <h4 class="fw-bold text-tech-blue mb-2">Farm Sense</h4>
+                            <p class="text-muted mb-3">IoT Agriculture Security</p>
                             <p class="mb-3">Smart intrusion detection system designed specifically for agricultural environments.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Motion & Vibration Detection</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Real-time Farm Monitoring</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Early Warning Alerts</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>IoT Sensor Integration</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Wildlife Intrusion Detection</li>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Motion & Vibration Detection</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Real-time Farm Monitoring</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Early Warning Alerts</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Wildlife Intrusion Detection</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
-                        <div class="card-header bg-gradient-primary text-white text-center py-4">
-                            <i class="bi bi-shield-check fs-1 mb-3 d-block"></i>
-                            <h4 class="fw-bold mb-1">Farm Guard</h4>
-                            <p class="mb-0 opacity-75">Automated Farm Security</p>
+                <!-- Farm Guard -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <!-- Product Image -->
+                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 200px;">
+                            <img src="images/farmguard_product.png" alt="Farm Guard Product" class="img-fluid" style="max-height: 180px; max-width: 100%; object-fit: contain;">
                         </div>
                         <div class="card-body p-4">
+                            <h4 class="fw-bold text-tech-blue mb-2">Farm Guard</h4>
+                            <p class="text-muted mb-3">Automated Farm Security</p>
                             <p class="mb-3">Comprehensive security platform with automated deterrent systems for farm protection.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Automated Security Response</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Wildlife Deterrent Systems</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Smart Perimeter Control</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Siren & Light Activation</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Remote Monitoring Dashboard</li>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Automated Security Response</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Wildlife Deterrent Systems</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Smart Perimeter Control</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Remote Monitoring Dashboard</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
-                        <div class="card-header bg-gradient-primary text-white text-center py-4">
-                            <i class="bi bi-camera fs-1 mb-3 d-block"></i>
-                            <h4 class="fw-bold mb-1">WildSec</h4>
-                            <p class="mb-0 opacity-75">AI-Ready Wildlife Monitoring</p>
+                <!-- WildSec -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <!-- Product Image -->
+                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 200px;">
+                            <img src="images/wildsec_product.png" alt="WildSec Product" class="img-fluid" style="max-height: 180px; max-width: 100%; object-fit: contain;">
                         </div>
                         <div class="card-body p-4">
+                            <h4 class="fw-bold text-tech-blue mb-2">WildSec</h4>
+                            <p class="text-muted mb-3">AI-Ready Wildlife Monitoring</p>
                             <p class="mb-3">Solar-powered surveillance system with AI capabilities for wildlife and security monitoring.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Solar-Powered Operation</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>AI-Ready Technology</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>4G Connectivity</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Selective Media Upload</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Advanced Perimeter Security</li>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Solar-Powered Operation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>AI-Ready Technology</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>4G Connectivity</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Selective Media Upload</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
-                        <div class="card-header bg-gradient-primary text-white text-center py-4">
-                            <i class="bi bi-droplet fs-1 mb-3 d-block"></i>
-                            <h4 class="fw-bold mb-1">FloodSense</h4>
-                            <p class="mb-0 opacity-75">Smart Flood Monitoring</p>
+                <!-- FloodSense -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <!-- Product Image -->
+                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 200px;">
+                            <img src="images/floodsense_product.png" alt="FloodSense Product" class="img-fluid" style="max-height: 180px; max-width: 100%; object-fit: contain;">
                         </div>
                         <div class="card-body p-4">
+                            <h4 class="fw-bold text-tech-blue mb-2">FloodSense</h4>
+                            <p class="text-muted mb-3">Smart Flood Monitoring</p>
                             <p class="mb-3">Government-grade flood monitoring and early warning system with predictive analytics.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Solar CCTV Integration</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>NB-IoT Water Level Sensors</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>AI-Powered Predictions</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Real-time Alerts</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Disaster Management Tools</li>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Solar CCTV Integration</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>NB-IoT Water Level Sensors</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>AI-Powered Predictions</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-tech-green me-2"></i>Real-time Alerts</li>
                             </ul>
                         </div>
                     </div>
@@ -419,21 +414,18 @@
                 <p class="fs-5 text-muted">Trusted by leading organizations across Malaysia</p>
             </div>
             
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
+            <div class="row g-4 justify-content-center">
+                <!-- SBTAPE -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <div class="bg-light d-flex align-items-center justify-content-center p-4" style="height: 140px;">
+                            <img src="images/sbtape_logo.png" alt="SBTAPE Sdn Bhd" class="img-fluid" style="max-height: 100px; max-width: 100%; object-fit: contain;">
+                        </div>
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-primary bg-opacity-10 rounded-3 p-3 me-3">
-                                    <i class="bi bi-factory text-primary fs-4"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold text-primary mb-1">SBTAPE Sdn Bhd</h5>
-                                    <small class="text-muted">Manufacturing</small>
-                                </div>
-                            </div>
-                            <h6 class="fw-bold mb-2">Coating Production System</h6>
-                            <p class="text-muted small mb-3">Maintain and add new features to comply user need</p>
+                            <h5 class="fw-bold text-tech-blue mb-2">SBTAPE Sdn Bhd</h5>
+                            <small class="text-muted">Manufacturing</small>
+                            <h6 class="fw-bold mt-3 mb-2">Coating Production System</h6>
+                            <p class="text-muted small">Maintain and add new features to comply user need</p>
                             <div class="d-flex flex-wrap gap-1">
                                 <span class="badge bg-secondary">.NET</span>
                                 <span class="badge bg-secondary">C#</span>
@@ -443,137 +435,81 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
+                <!-- JPNIN -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <div class="bg-light d-flex align-items-center justify-content-center p-4" style="height: 140px;">
+                            <img src="images/jpnin_logo.png" alt="JPNIN" class="img-fluid" style="max-height: 100px; max-width: 100%; object-fit: contain;">
+                        </div>
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-success bg-opacity-10 rounded-3 p-3 me-3">
-                                    <i class="bi bi-flag text-success fs-4"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold text-primary mb-1">JPNIN</h5>
-                                    <small class="text-muted">Government Agency</small>
-                                </div>
-                            </div>
-                            <h6 class="fw-bold mb-2">E-Fokus Mapping</h6>
-                            <p class="text-muted small mb-3">Mapping and matching with analisis issue perpaduan</p>
-                            <div class="d-flex flex-wrap gap-1 mb-2">
+                            <h5 class="fw-bold text-tech-blue mb-2">JPNIN</h5>
+                            <small class="text-muted">Government Agency</small>
+                            <h6 class="fw-bold mt-3 mb-2">E-Fokus Mapping</h6>
+                            <p class="text-muted small">Mapping and matching with analisis issue perpaduan</p>
+                            <p class="small text-tech-blue mb-2">
+                                <i class="bi bi-link-45deg me-1"></i>efokus.jpnin.gov.my
+                            </p>
+                            <div class="d-flex flex-wrap gap-1">
                                 <span class="badge bg-secondary">MAPS</span>
                                 <span class="badge bg-secondary">Analytics</span>
-                                <span class="badge bg-secondary">Web Platform</span>
                             </div>
-                            <small class="text-primary">
-                                <i class="bi bi-link-45deg me-1"></i>efokus.jpnin.gov.my
-                            </small>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
+                <!-- IWK -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <div class="bg-light d-flex align-items-center justify-content-center p-4" style="height: 140px;">
+                            <img src="images/iwk_logo.png" alt="IWK" class="img-fluid" style="max-height: 100px; max-width: 100%; object-fit: contain;">
+                        </div>
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-info bg-opacity-10 rounded-3 p-3 me-3">
-                                    <i class="bi bi-droplet text-info fs-4"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold text-primary mb-1">IWK</h5>
-                                    <small class="text-muted">Indah Water Konsortium</small>
-                                </div>
-                            </div>
-                            <h6 class="fw-bold mb-2">New Billing System</h6>
-                            <p class="text-muted small mb-3">ALL in One Internal system likely ERP system for operational</p>
+                            <h5 class="fw-bold text-tech-blue mb-2">IWK</h5>
+                            <small class="text-muted">Indah Water Konsortium</small>
+                            <h6 class="fw-bold mt-3 mb-2">New Billing System</h6>
+                            <p class="text-muted small">ALL in One Internal system likely ERP system for operational</p>
                             <div class="d-flex flex-wrap gap-1">
                                 <span class="badge bg-secondary">ERP</span>
                                 <span class="badge bg-secondary">.NET Core</span>
-                                <span class="badge bg-secondary">Enterprise</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
+                <!-- RELA -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <div class="bg-light d-flex align-items-center justify-content-center p-4" style="height: 140px;">
+                            <img src="images/rela_logo.png" alt="RELA" class="img-fluid" style="max-height: 100px; max-width: 100%; object-fit: contain;">
+                        </div>
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-warning bg-opacity-10 rounded-3 p-3 me-3">
-                                    <i class="bi bi-people text-warning fs-4"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold text-primary mb-1">RELA</h5>
-                                    <small class="text-muted">Jabatan Sukarelawan Malaysia</small>
-                                </div>
-                            </div>
-                            <h6 class="fw-bold mb-2">Mapping and Predict</h6>
-                            <p class="text-muted small mb-3">Mapping all cases related with anggota to count anggota working and check nearest location</p>
+                            <h5 class="fw-bold text-tech-blue mb-2">RELA</h5>
+                            <small class="text-muted">Jabatan Sukarelawan Malaysia</small>
+                            <h6 class="fw-bold mt-3 mb-2">Mapping and Predict</h6>
+                            <p class="text-muted small">Mapping all cases related with anggota to count working and check nearest location</p>
                             <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-secondary">Record Mapping</span>
-                                <span class="badge bg-secondary">Analytics</span>
+                                <span class="badge bg-secondary">Mapping</span>
                                 <span class="badge bg-secondary">Location AI</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 shadow hover-lift h-100">
+                <!-- Felcra -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow h-100">
+                        <div class="bg-light d-flex align-items-center justify-content-center p-4" style="height: 140px;">
+                            <img src="images/felcra_logo.png" alt="Felcra Berhad" class="img-fluid" style="max-height: 100px; max-width: 100%; object-fit: contain;">
+                        </div>
                         <div class="card-body p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-success bg-opacity-10 rounded-3 p-3 me-3">
-                                    <i class="bi bi-tree text-success fs-4"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold text-primary mb-1">Felcra Berhad</h5>
-                                    <small class="text-muted">Agriculture Development</small>
-                                </div>
-                            </div>
-                            <h6 class="fw-bold mb-2">Device Farmsense</h6>
-                            <p class="text-muted small mb-3">To detect and warn to farmer on wild animals like elephant tresspass palm oil plant</p>
+                            <h5 class="fw-bold text-tech-blue mb-2">Felcra Berhad</h5>
+                            <small class="text-muted">Agriculture Development</small>
+                            <h6 class="fw-bold mt-3 mb-2">Device Farmsense</h6>
+                            <p class="text-muted small">To detect and warn to farmer on wild animals like elephant tresspass palm oil plant</p>
                             <div class="d-flex flex-wrap gap-1">
                                 <span class="badge bg-secondary">IoT Sensors</span>
                                 <span class="badge bg-secondary">AI Detection</span>
-                                <span class="badge bg-secondary">Farm Security</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Client Stats -->
-            <div class="row g-4 text-center">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card border-0 bg-primary bg-opacity-10 h-100">
-                        <div class="card-body p-4">
-                            <i class="bi bi-building text-primary fs-2 mb-3"></i>
-                            <h4 class="fw-bold text-primary mb-1" data-counter-stat="5">0+</h4>
-                            <p class="text-muted mb-0">Enterprise Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card border-0 bg-success bg-opacity-10 h-100">
-                        <div class="card-body p-4">
-                            <i class="bi bi-diagram-3 text-success fs-2 mb-3"></i>
-                            <h4 class="fw-bold text-success mb-1" data-counter-stat="10">0+</h4>
-                            <p class="text-muted mb-0">Projects Delivered</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card border-0 bg-warning bg-opacity-10 h-100">
-                        <div class="card-body p-4">
-                            <i class="bi bi-graph-up text-warning fs-2 mb-3"></i>
-                            <h4 class="fw-bold text-warning mb-1" data-counter-stat="100">0%</h4>
-                            <p class="text-muted mb-0">Client Satisfaction</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card border-0 bg-info bg-opacity-10 h-100">
-                        <div class="card-body p-4">
-                            <i class="bi bi-handshake text-info fs-2 mb-3"></i>
-                            <h4 class="fw-bold text-info mb-1" data-counter-stat="3">0</h4>
-                            <p class="text-muted mb-0">Government Agencies</p>
                         </div>
                     </div>
                 </div>
@@ -589,35 +525,35 @@
                 <p class="fs-5 text-muted">Full-stack capabilities across modern technology stacks</p>
             </div>
             
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card border-0 shadow text-center h-100">
                         <div class="card-body p-4">
                             <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
                                  style="width: 80px; height: 80px;">
                                 <i class="bi bi-code-slash text-white fs-3"></i>
                             </div>
-                            <h5 class="fw-bold text-primary mb-3">Programming Languages</h5>
+                            <h5 class="fw-bold text-tech-blue mb-3">Programming Languages</h5>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
-                                <span class="badge bg-primary">C#</span>
-                                <span class="badge bg-primary">Python</span>
-                                <span class="badge bg-primary">JavaScript</span>
-                                <span class="badge bg-primary">C++</span>
-                                <span class="badge bg-primary">Go</span>
-                                <span class="badge bg-primary">Rust</span>
+                                <span class="badge bg-tech-blue">C#</span>
+                                <span class="badge bg-tech-blue">Python</span>
+                                <span class="badge bg-tech-blue">JavaScript</span>
+                                <span class="badge bg-tech-blue">C++</span>
+                                <span class="badge bg-tech-blue">Go</span>
+                                <span class="badge bg-tech-blue">Rust</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card border-0 shadow text-center h-100">
                         <div class="card-body p-4">
                             <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
                                  style="width: 80px; height: 80px;">
                                 <i class="bi bi-layers text-white fs-3"></i>
                             </div>
-                            <h5 class="fw-bold text-primary mb-3">Frameworks & Platforms</h5>
+                            <h5 class="fw-bold text-tech-blue mb-3">Frameworks & Platforms</h5>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
                                 <span class="badge bg-secondary">.NET 6+</span>
                                 <span class="badge bg-secondary">ASP.NET Core</span>
@@ -630,33 +566,33 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card border-0 shadow text-center h-100">
                         <div class="card-body p-4">
                             <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
                                  style="width: 80px; height: 80px;">
                                 <i class="bi bi-server text-white fs-3"></i>
                             </div>
-                            <h5 class="fw-bold text-primary mb-3">Database Systems</h5>
+                            <h5 class="fw-bold text-tech-blue mb-3">Database Systems</h5>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
-                                <span class="badge bg-success">Oracle</span>
-                                <span class="badge bg-success">PostgreSQL</span>
-                                <span class="badge bg-success">MySQL</span>
-                                <span class="badge bg-success">MongoDB</span>
-                                <span class="badge bg-success">Redis</span>
+                                <span class="badge bg-tech-green">Oracle</span>
+                                <span class="badge bg-tech-green">PostgreSQL</span>
+                                <span class="badge bg-tech-green">MySQL</span>
+                                <span class="badge bg-tech-green">MongoDB</span>
+                                <span class="badge bg-tech-green">Redis</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card border-0 shadow text-center h-100">
                         <div class="card-body p-4">
                             <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
                                  style="width: 80px; height: 80px;">
                                 <i class="bi bi-cpu text-white fs-3"></i>
                             </div>
-                            <h5 class="fw-bold text-primary mb-3">IoT & Hardware</h5>
+                            <h5 class="fw-bold text-tech-blue mb-3">IoT & Hardware</h5>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
                                 <span class="badge bg-warning">ESP32</span>
                                 <span class="badge bg-warning">Raspberry Pi</span>
@@ -669,14 +605,14 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card border-0 shadow text-center h-100">
                         <div class="card-body p-4">
                             <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
                                  style="width: 80px; height: 80px;">
                                 <i class="bi bi-cloud text-white fs-3"></i>
                             </div>
-                            <h5 class="fw-bold text-primary mb-3">Cloud & DevOps</h5>
+                            <h5 class="fw-bold text-tech-blue mb-3">Cloud & DevOps</h5>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
                                 <span class="badge bg-info">Azure</span>
                                 <span class="badge bg-info">AWS</span>
@@ -688,14 +624,14 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card border-0 shadow text-center h-100">
                         <div class="card-body p-4">
                             <div class="bg-gradient-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" 
                                  style="width: 80px; height: 80px;">
                                 <i class="bi bi-robot text-white fs-3"></i>
                             </div>
-                            <h5 class="fw-bold text-primary mb-3">AI & Machine Learning</h5>
+                            <h5 class="fw-bold text-tech-blue mb-3">AI & Machine Learning</h5>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
                                 <span class="badge bg-danger">TensorFlow</span>
                                 <span class="badge bg-danger">PyTorch</span>
@@ -719,147 +655,253 @@
                 <p class="fs-5 text-muted">13+ years of technology leadership and innovation</p>
             </div>
             
+            <!-- Vertical Timeline -->
             <div class="position-relative">
-                <div class="timeline">
-                    <!-- Current Position -->
-                    <div class="row mb-4">
-                        <div class="col-lg-6 mb-4">
-                            <div class="card border-0 shadow-lg border-success border-3">
-                                <div class="card-header bg-success text-white">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <small class="fw-bold">September 2025 - Present</small>
-                                        <span class="badge bg-light text-success">CURRENT</span>
-                                    </div>
-                                </div>
-                                <div class="card-body p-4">
-                                    <h5 class="fw-bold text-success mb-2">Software Engineer</h5>
-                                    <h6 class="text-muted mb-3">Asolute Sdn Bhd</h6>
-                                    <p class="mb-3">Developing comprehensive logistics and ERP systems using full-stack technologies. Building scalable applications for enhanced operational efficiency.</p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-primary">Full-Stack Development</span>
-                                        <span class="badge bg-secondary">ERP Systems</span>
-                                        <span class="badge bg-success">Logistics Management</span>
-                                        <span class="badge bg-info">Mobile Apps</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="card-header bg-primary text-white">
-                                    <small class="fw-bold">June 2025 - August 2025</small>
-                                </div>
-                                <div class="card-body p-4">
-                                    <h5 class="fw-bold text-primary mb-2">Back-End Developer</h5>
-                                    <h6 class="text-muted mb-3">HPCS Sdn Bhd</h6>
-                                    <p class="mb-3">Built scalable billing system components using .NET Core 6 and REST APIs with minimal supervision.</p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-primary">.NET Core 6</span>
-                                        <span class="badge bg-secondary">REST APIs</span>
-                                        <span class="badge bg-success">Billing Systems</span>
+                <!-- Timeline Line -->
+                <div class="position-absolute start-50 translate-middle-x bg-gradient-primary" style="width: 4px; top: 0; bottom: 0; z-index: 0;"></div>
+                
+                <!-- Timeline Items -->
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Current Position - Asolute -->
+                        <div class="row mb-5 position-relative">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <div class="text-lg-end pe-lg-4">
+                                    <div class="card border-0 shadow-lg border-success border-3">
+                                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 100px;">
+                                            <img src="images/asolute_logo.png" alt="Asolute Sdn Bhd" class="img-fluid" style="max-height: 80px; max-width: 100%; object-fit: contain;">
+                                        </div>
+                                        <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+                                            <small class="fw-bold">September 2025 - Present</small>
+                                            <span class="badge bg-light text-success">CURRENT</span>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold text-success mb-2">Software Engineer</h5>
+                                            <h6 class="text-muted mb-3">Asolute Sdn Bhd</h6>
+                                            <p class="mb-3">
+                                                Currently developing comprehensive logistics and enterprise resource planning (ERP) systems using cutting-edge full-stack technologies. 
+                                                My role involves architecting scalable web and mobile applications that streamline complex business operations and enhance operational efficiency.
+                                            </p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-primary">Full-Stack</span>
+                                                <span class="badge bg-secondary">ERP</span>
+                                                <span class="badge bg-info">Mobile Apps</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6">
+                                <!-- Timeline Node -->
+                                <div class="position-absolute start-50 translate-middle bg-success rounded-circle d-flex align-items-center justify-content-center" 
+                                     style="width: 50px; height: 50px; z-index: 2; border: 4px solid white;">
+                                    <span class="text-white fw-bold">01</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row mb-4">
-                        <div class="col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="card-header bg-primary text-white">
-                                    <small class="fw-bold">July 2024 - Present</small>
-                                </div>
-                                <div class="card-body p-4">
-                                    <h5 class="fw-bold text-primary mb-2">Chief Inventor & Founder</h5>
-                                    <h6 class="text-muted mb-3">Nasa Def Sdn Bhd</h6>
-                                    <p class="mb-3">Leading IoT development for agriculture with smart vibration sensors and government relations.</p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-warning">IoT Development</span>
-                                        <span class="badge bg-info">Smart Sensors</span>
-                                        <span class="badge bg-danger">AI/ML</span>
-                                        <span class="badge bg-success">Government Relations</span>
+                        <!-- HPCS -->
+                        <div class="row mb-5 position-relative">
+                            <div class="col-lg-6 order-lg-2 mb-3 mb-lg-0">
+                                <div class="ps-lg-4">
+                                    <div class="card border-0 shadow">
+                                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 100px;">
+                                            <img src="images/hpcs_logo.png" alt="HPCS Sdn Bhd" class="img-fluid" style="max-height: 80px; max-width: 100%; object-fit: contain;">
+                                        </div>
+                                        <div class="card-header bg-primary text-white">
+                                            <small class="fw-bold">June 2025 - August 2025</small>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold text-tech-blue mb-2">Back-End Developer</h5>
+                                            <h6 class="text-muted mb-3">HPCS Sdn Bhd</h6>
+                                            <p class="mb-3">
+                                                Specialized in building highly scalable and efficient billing system components using .NET Core 6 and RESTful APIs. 
+                                                Operated with minimal supervision while maintaining excellent code quality.
+                                            </p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-primary">.NET Core 6</span>
+                                                <span class="badge bg-secondary">REST APIs</span>
+                                                <span class="badge bg-success">Billing</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="card-header bg-primary text-white">
-                                    <small class="fw-bold">Dec 2019 - May 2025</small>
-                                </div>
-                                <div class="card-body p-4">
-                                    <h5 class="fw-bold text-primary mb-2">Technology Product Manager</h5>
-                                    <h6 class="text-muted mb-3">Cara Technologies Sdn Bhd</h6>
-                                    <p class="mb-3">Led full-stack development and engineered scalable enterprise solutions for FinTech products.</p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-primary">.NET Framework</span>
-                                        <span class="badge bg-secondary">SQL Server</span>
-                                        <span class="badge bg-warning">FinTech Solutions</span>
-                                        <span class="badge bg-success">Team Leadership</span>
-                                    </div>
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="position-absolute start-50 translate-middle bg-tech-blue rounded-circle d-flex align-items-center justify-content-center" 
+                                     style="width: 50px; height: 50px; z-index: 2; border: 4px solid white;">
+                                    <span class="text-white fw-bold">02</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row mb-4">
-                        <div class="col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="card-header bg-secondary text-white">
-                                    <small class="fw-bold">July 2014 - July 2018</small>
-                                </div>
-                                <div class="card-body p-4">
-                                    <h5 class="fw-bold text-secondary mb-2">IT Executive</h5>
-                                    <h6 class="text-muted mb-3">SB Tape International Sdn Bhd</h6>
-                                    <p class="mb-3">Managed daily IT operations and .NET development for enterprise systems.</p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-info">System Maintenance</span>
-                                        <span class="badge bg-primary">.NET Development</span>
-                                        <span class="badge bg-secondary">Enterprise Systems</span>
-                                        <span class="badge bg-warning">IT Operations</span>
+                        <!-- Nasa Def Founder -->
+                        <div class="row mb-5 position-relative">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <div class="text-lg-end pe-lg-4">
+                                    <div class="card border-0 shadow">
+                                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 100px;">
+                                            <img src="images/nasadef_logo.png" alt="Nasa Def Sdn Bhd" class="img-fluid" style="max-height: 80px; max-width: 100%; object-fit: contain;">
+                                        </div>
+                                        <div class="card-header bg-primary text-white">
+                                            <small class="fw-bold">July 2024 - Present</small>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold text-tech-blue mb-2">Chief Inventor & Founder</h5>
+                                            <h6 class="text-muted mb-3">Nasa Def Sdn Bhd</h6>
+                                            <p class="mb-3">
+                                                Leading comprehensive IoT product development specifically designed for the agriculture sector, with a focus on smart vibration sensors and intelligent monitoring systems.
+                                            </p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-warning">IoT</span>
+                                                <span class="badge bg-info">Smart Sensors</span>
+                                                <span class="badge bg-danger">AI/ML</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="card-header bg-secondary text-white">
-                                    <small class="fw-bold">July 2013 - June 2014</small>
-                                </div>
-                                <div class="card-body p-4">
-                                    <h5 class="fw-bold text-secondary mb-2">IT Marketing & Support</h5>
-                                    <h6 class="text-muted mb-3">Vida Beauty Enterprise</h6>
-                                    <p class="mb-3">Deployed MLM website infrastructure and managed digital marketing campaigns.</p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-success">Web Development</span>
-                                        <span class="badge bg-info">MLM Systems</span>
-                                        <span class="badge bg-warning">Digital Marketing</span>
-                                        <span class="badge bg-primary">Payroll Systems</span>
-                                    </div>
+                            <div class="col-lg-6">
+                                <div class="position-absolute start-50 translate-middle bg-warning rounded-circle d-flex align-items-center justify-content-center" 
+                                     style="width: 50px; height: 50px; z-index: 2; border: 4px solid white;">
+                                    <span class="text-white fw-bold">03</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-lg-6 mb-4">
-                            <div class="card border-0 shadow">
-                                <div class="card-header bg-secondary text-white">
-                                    <small class="fw-bold">March 2012 - June 2013</small>
-                                </div>
-                                <div class="card-body p-4">
-                                    <h5 class="fw-bold text-secondary mb-2">Admin Assistant & IT Support</h5>
-                                    <h6 class="text-muted mb-3">De Pauh Garden Restaurant</h6>
-                                    <p class="mb-3">Configured POS systems and managed HR records with statistical reporting.</p>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-warning">POS Systems</span>
-                                        <span class="badge bg-info">HR Management</span>
-                                        <span class="badge bg-success">Data Analysis</span>
-                                        <span class="badge bg-primary">IT Support</span>
+                        <!-- Cara Technologies -->
+                        <div class="row mb-5 position-relative">
+                            <div class="col-lg-6 order-lg-2 mb-3 mb-lg-0">
+                                <div class="ps-lg-4">
+                                    <div class="card border-0 shadow">
+                                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 100px;">
+                                            <img src="images/cara_logo.png" alt="Cara Technologies Sdn Bhd" class="img-fluid" style="max-height: 80px; max-width: 100%; object-fit: contain;">
+                                        </div>
+                                        <div class="card-header bg-primary text-white">
+                                            <small class="fw-bold">December 2019 - May 2025</small>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold text-tech-blue mb-2">Technology Product Manager</h5>
+                                            <h6 class="text-muted mb-3">Cara Technologies Sdn Bhd</h6>
+                                            <p class="mb-3">
+                                                Led full-stack development initiatives and product strategy for multiple FinTech products serving banking and financial institutions. 
+                                                Architected and engineered highly scalable enterprise solutions.
+                                            </p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-primary">.NET</span>
+                                                <span class="badge bg-warning">FinTech</span>
+                                                <span class="badge bg-success">Leadership</span>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="position-absolute start-50 translate-middle bg-danger rounded-circle d-flex align-items-center justify-content-center" 
+                                     style="width: 50px; height: 50px; z-index: 2; border: 4px solid white;">
+                                    <span class="text-white fw-bold">04</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SB Tape -->
+                        <div class="row mb-5 position-relative">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <div class="text-lg-end pe-lg-4">
+                                    <div class="card border-0 shadow">
+                                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 100px;">
+                                            <img src="images/sbtape_logo.png" alt="SB Tape International Sdn Bhd" class="img-fluid" style="max-height: 80px; max-width: 100%; object-fit: contain;">
+                                        </div>
+                                        <div class="card-header bg-secondary text-white">
+                                            <small class="fw-bold">July 2014 - July 2018</small>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold text-secondary mb-2">IT Executive</h5>
+                                            <h6 class="text-muted mb-3">SB Tape International Sdn Bhd</h6>
+                                            <p class="mb-3">
+                                                Managed comprehensive daily IT operations for a manufacturing enterprise including network infrastructure, system maintenance, and help desk support.
+                                            </p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-info">System Maintenance</span>
+                                                <span class="badge bg-primary">.NET</span>
+                                                <span class="badge bg-warning">IT Operations</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-absolute start-50 translate-middle bg-info rounded-circle d-flex align-items-center justify-content-center" 
+                                     style="width: 50px; height: 50px; z-index: 2; border: 4px solid white;">
+                                    <span class="text-white fw-bold">05</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vida Beauty -->
+                        <div class="row mb-5 position-relative">
+                            <div class="col-lg-6 order-lg-2 mb-3 mb-lg-0">
+                                <div class="ps-lg-4">
+                                    <div class="card border-0 shadow">
+                                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 100px;">
+                                            <img src="images/vidabeauty_logo.png" alt="Vida Beauty Enterprise" class="img-fluid" style="max-height: 80px; max-width: 100%; object-fit: contain;">
+                                        </div>
+                                        <div class="card-header bg-secondary text-white">
+                                            <small class="fw-bold">July 2013 - June 2014</small>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold text-secondary mb-2">IT Marketing & Support</h5>
+                                            <h6 class="text-muted mb-3">Vida Beauty Enterprise</h6>
+                                            <p class="mb-3">
+                                                Deployed and configured multi-level marketing (MLM) website infrastructure with integrated commission tracking and genealogy systems.
+                                            </p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-success">Web Development</span>
+                                                <span class="badge bg-info">MLM Systems</span>
+                                                <span class="badge bg-warning">Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="position-absolute start-50 translate-middle bg-secondary rounded-circle d-flex align-items-center justify-content-center" 
+                                     style="width: 50px; height: 50px; z-index: 2; border: 4px solid white;">
+                                    <span class="text-white fw-bold">06</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- De Pauh Garden -->
+                        <div class="row position-relative">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <div class="text-lg-end pe-lg-4">
+                                    <div class="card border-0 shadow">
+                                        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="height: 100px;">
+                                            <img src="images/depauh_logo.png" alt="De Pauh Garden Restaurant" class="img-fluid" style="max-height: 80px; max-width: 100%; object-fit: contain;">
+                                        </div>
+                                        <div class="card-header bg-secondary text-white">
+                                            <small class="fw-bold">March 2012 - June 2013</small>
+                                        </div>
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold text-secondary mb-2">Admin Assistant & IT Support</h5>
+                                            <h6 class="text-muted mb-3">De Pauh Garden Restaurant</h6>
+                                            <p class="mb-3">
+                                                Configured and maintained point-of-sale (POS) systems for restaurant operations ensuring minimal downtime and efficient transaction processing.
+                                            </p>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="badge bg-warning">POS Systems</span>
+                                                <span class="badge bg-info">HR Management</span>
+                                                <span class="badge bg-primary">IT Support</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-absolute start-50 translate-middle bg-dark rounded-circle d-flex align-items-center justify-content-center" 
+                                     style="width: 50px; height: 50px; z-index: 2; border: 4px solid white;">
+                                    <span class="text-white fw-bold">07</span>
                                 </div>
                             </div>
                         </div>
@@ -940,26 +982,22 @@
                             <form id="contactForm">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control bg-white bg-opacity-20 border-0 text-white" 
-                                           id="name" name="name" required>
+                                    <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
                                 
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control bg-white bg-opacity-20 border-0 text-white" 
-                                           id="email" name="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" required>
                                 </div>
                                 
                                 <div class="mb-3">
                                     <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control bg-white bg-opacity-20 border-0 text-white" 
-                                           id="subject" name="subject" required>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
                                 </div>
                                 
                                 <div class="mb-4">
                                     <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control bg-white bg-opacity-20 border-0 text-white" 
-                                              id="message" name="message" rows="5" required></textarea>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                                 </div>
                                 
                                 <button type="submit" class="btn btn-light btn-lg w-100">
@@ -1003,9 +1041,8 @@
 
     <!-- Bootstrap 5.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K2GV3ZK1CB"></script>
-
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2GV3ZK1CB"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
