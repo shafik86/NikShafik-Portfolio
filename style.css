@@ -3,6 +3,7 @@
 :root {
     --tech-blue: #0066cc;
     --tech-blue-dark: #004c99;
+	--tech-blue-light: #3396D3;
     --tech-green: #00a86b;
     --tech-green-dark: #008556;
     --corporate-gray: #2c3e50;
@@ -47,9 +48,35 @@
     color: white;
 }
 
+.btn-tech-blue {
+    background-color: var(--tech-blue) !important;
+    color: white !important;
+    border: none;
+}
+
+.btn-tech-blue:hover {
+    background-color: var(--tech-blue-dark) !important;
+    color: white !important;
+}
+.btn-tech-blue:active {
+background-color: var(--tech-blue-light) !important;
+}
+
 /* Navigation */
 .navbar { 
     backdrop-filter: blur(10px);
+}
+
+.navbar-light {
+    background-color: rgba(248, 249, 250, 0.95) !important;
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+}
+
+[data-bs-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1);
 }
 
 /* Hero Section */
@@ -92,10 +119,12 @@
 .card {
     border: none;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .card:hover {
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
 }
 
 /* Timeline - Simplified */
@@ -130,6 +159,27 @@
     border-color: var(--tech-blue);
 }
 
+[data-bs-theme="dark"] .text-muted {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+[data-bs-theme="dark"] .bg-body-secondary {
+    background-color: #1a1d20 !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: rgba(52, 58, 64, 0.6) !important;
+}
+
+[data-bs-theme="dark"] .card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
@@ -145,13 +195,20 @@ html {
     .display-3 {
         font-size: 2rem;
     }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .display-6 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Print Styles */
 @media print {
     .navbar,
-    #contact,
-    footer {
+    #contact {
         display: none;
     }
     
@@ -159,4 +216,21 @@ html {
         background: white;
         color: black;
     }
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a !important;
+}
+
+footer h6 {
+    color: white !important;
+}
+
+footer a:hover {
+    color: var(--tech-blue) !important;
+}
+
+footer .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
 }
